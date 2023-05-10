@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="homecss.css">
+<head>
+  <title>Civil War Interactive Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #8b5e34;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #000000;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 32px;
+      color: #ffffff;
+    }
+    
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .section {
+      margin-bottom: 40px;
+    }
+    
+    .section h2 {
+      font-size: 24px;
+    }
+    
+    .section p {
+      font-size: 16px;
+    }
+    
+    .interactive-element {
+      background-color: #ffffff;
+      color: #8b5e34;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .interactive-element:hover {
+      background-color: #8b5e34;
+      color: #ffffff;
+    }
+    
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Civil War Interactive Website</h1>
+  </header>
+  
+  <div class="container">
+    <div class="section">
+      <h2>Causes of the Civil War</h2>
+      <p>The Civil War was primarily caused by...</p>
+      <p class="interactive-element">Click here to learn more</p>
+      <div class="hidden">
+        <p>Detailed information about the causes of the Civil War.</p>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>Key Battles</h2>
+      <p>Some of the significant battles during the Civil War include...</p>
+      <p class="interactive-element">Click here to view the battles</p>
+      <div class="hidden">
+        <ul>
+          <li>Battle 1</li>
+          <li>Battle 2</li>
+          <li>Battle 3</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>Notable Figures</h2>
+      <p>Learn about the important figures of the Civil War, such as...</p>
+      <p class="interactive-element">Click here to see the notable figures</p>
+      <div class="hidden">
+        <ul>
+          <li>Figure 1</li>
+          <li>Figure 2</li>
+          <li>Figure 3</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    // Add click event listeners to interactive elements
+    const interactiveElements = document.querySelectorAll('.interactive-element');
+    
+    interactiveElements.forEach(element => {
+      element.addEventListener('click', () => {
+        const hiddenContent = element.nextElementSibling;
+        hiddenContent.classList.toggle('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

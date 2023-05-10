@@ -1,0 +1,60 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #8b5e34;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #ffffff;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .section h2 {
+    font-size: 24px;
+  }
+  
+  .section p {
+    font-size: 16px;
+  }
+  
+  .interactive-element {
+    background-color: #ffffff;
+    color: #8b5e34;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .interactive-element:hover {
+    background-color: #8b5e34;
+    color: #ffffff;
+  }
+  
+  .hidden {
+    display: none;
+  }
