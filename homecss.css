@@ -12,7 +12,7 @@
   }
   
   header {
-    background-color: #000000;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     padding: 20px;
     text-align: center;
   }
@@ -43,7 +43,7 @@
   
   .interactive-element {
     background-color: #ffffff;
-    color: #8b5e34;
+    color: #60423C;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -58,3 +58,47 @@
   .hidden {
     display: none;
   }
+
+
+
+  .gettyAd {
+    background-image: url('images/gettyad.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    padding: 250px; 
+    overflow: hidden;
+    
+  }
+  
+  .text-container {
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    color: #ffffff;
+  }
+  
+  .title {
+    color: rgb(206, 0, 0);
+    font-size: 80px;
+    font-family: Palatino, serif;
+  }
+  
+  .date {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+  }
+
+  .textcivi {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    padding: 20px;
+    font-size: 26px;
+    color: #ffffff;
+  }
+
+  
