@@ -5,7 +5,7 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #8b5e34;
+    background-color: #967454;
     color: #ffffff;
     margin: 0;
     padding: 0;
@@ -76,18 +76,21 @@
     position: absolute;
     top: 10px;
     left: 500px;
+    left: clamp(200px, 30%, 500px);
     color: #ffffff;
   }
   
   .title {
     color: rgb(206, 0, 0);
-    font-size: 80px;
+    font-size: clamp(20px, 4vw, 80px);
     font-family: Palatino, serif;
   }
   
   .date {
     color: rgb(0, 0, 0);
-    font-size: 30px;
+    font-size: clamp(10px, 2vw, 30px);
+    top: 20px;
+    margin-top: 4%;
   }
 
   .textcivi {
@@ -100,5 +103,32 @@
     font-size: 26px;
     color: #ffffff;
   }
+.info{
+  background-color: #c4a78d;
+  margin: 0 auto; /* Centers the info box horizontally */
+  margin-top: 10px;
+  text-align: center; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  max-width: 1000px; 
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  font-family: Brush Script MT, Brush Script Std, cursive	
+}
+.textInsideInfo{
+  font-size: 28px;
+  font-family: Arial, sans-serif;
+
+  color: rgb(0, 0, 0);
+  margin: 20px;
+  padding: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+.info h3{
+  font-size: 70px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 
   
