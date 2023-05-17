@@ -93,7 +93,7 @@
     margin-top: 4%;
   }
 
-  .textcivi {
+  .authorText {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -103,32 +103,34 @@
     font-size: 26px;
     color: #ffffff;
   }
-.info{
-  background-color: #c4a78d;
-  margin: 0 auto; /* Centers the info box horizontally */
-  margin-top: 10px;
-  text-align: center; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  max-width: 1000px; 
-  padding: 10px;
-  color: rgb(0, 0, 0);
-  font-family: Brush Script MT, Brush Script Std, cursive	
-}
-.textInsideInfo{
-  font-size: 28px;
-  font-family: Arial, sans-serif;
 
-  color: rgb(0, 0, 0);
-  margin: 20px;
-  padding: 3px;
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-  border-radius: 20px;
-}
-.info h3{
-  font-size: 70px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
+  .info {
+    background-color: #c4a78d;
+    margin: 0 auto; /* Centers the info box horizontally */
+    margin-top: 10px;
+    text-align: center; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    max-width: 1000px; 
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-family: Brush Script MT, Brush Script Std, cursive	
+  }
 
+  .textInsideInfo {
+    font-size: 28px;
+    font-family: Arial, sans-serif;
+
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    padding: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+  }
+
+  .info h3 {
+    font-size: 70px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
   
