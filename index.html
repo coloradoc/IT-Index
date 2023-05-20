@@ -7,7 +7,7 @@
 
 
 </head><body><div class="topnav">
-  <a href="https://walledlakerobotics.com/index.html"><img src="images/USAflag.png" height="30px" width="50px" alt="308 logo"></a> 
+  <a href="index.html"><img src="images/USAflag.png" height="30px" width="50px" alt="308 logo"></a> 
   <div class="hover"> 
     <a href="index.html">HOME</a>
     <a href="https://walledlakerobotics.com/occra.html">1600s &amp; BEFORE</a>
@@ -32,20 +32,26 @@
 
   <body>
     <style>
-        .card {
-          flex-direction: column;
-          max-width: 300px;
-          background-color: #e4e4e4;
-          border-radius: 8px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          margin: 0 auto;
-          padding: 20px;
-          display: inline-block;
-          margin-left: 140px;
-          vertical-align: top;
-          
-        
-        }
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  flex-direction: row;
+  max-width: 300px;
+  background-color: #e4e4e4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+  padding: 20px;
+}
+
+
+
+
+
+
         
         .card-content {
           display: flex;
@@ -144,8 +150,10 @@
                   <h2 class="hover-line">America's Founding Documents</h2>
               
               </div>
-              <a href="https://example.com/link3">
-                <span class="card">
+              <div class= "cards">
+                
+              <a href="billOfRights.html">
+                <div class="card">
                   <div class="card-content">
                     <img alt="" src="https://www.uscourts.gov/sites/default/files/styles/lead/public/uscourts_bill_of_rights_0.png">
                     <div class="card-text">
@@ -153,9 +161,9 @@
                       <p></p>
                     </div>
                   </div>
-                </span>
+                </div>
               </a>
-              <a href="https://example.com/link3">
+              <a href="declarationOfIndependence.html">
               <div class="card">
                 <div class="card-content">
                   <img alt="" src="https://wpvip.edutopia.org/wp-content/uploads/2023/01/shutterstock_1663895323-crop.jpg">
@@ -166,7 +174,7 @@
                 </div>
               </div>
             </a>
-              <a href="https://example.com/link3">
+              <a href="constitution.html">
               <div class="card">
                 <div class="card-content">
                   <img alt="" src="https://uknow.uky.edu/sites/default/files/styles/uknow_story_image/public/GettyImages-171334997-constitution.jpg">
@@ -177,6 +185,7 @@
                 </div>
               </div>
             </a>
+          </div>
 
 
 
