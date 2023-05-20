@@ -134,15 +134,14 @@
     margin-bottom: 20px;
   }
  /* Footer section */
- footer {
-	background-color: #75502d;;
-	color: #fff;
-	padding: 30px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-  font-size: 24px;
-  }
+  
+  footer {
+    background-color: #75502d;;
+    color: #fff;
+    padding: 30px;
+    align-items: center;
+    font-size: 24px;
+    }
   .section{
     color: rgb(0, 0, 0);
     padding: 10px;

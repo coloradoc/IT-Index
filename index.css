@@ -62,7 +62,6 @@
 
 
   .americaImageTop {
-    background-image: url('images/westPainting.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -81,13 +80,13 @@
   }
   
   .title {
-    color: rgb(0, 0, 0);
+
     font-size: 130px;
     font-family: Palatino, serif;
   }
   
   .date {
-    color: rgb(0, 0, 0);
+
     font-size: clamp(20px, 2vw, 60px);
     top: 5px;
     margin-top: 4%;
@@ -138,8 +137,6 @@
 	background-color: #818181;;
 	color: #fff;
 	padding: 30px;
-	display: flex;
-	justify-content: space-between;
 	align-items: center;
   font-size: 24px;
   }
