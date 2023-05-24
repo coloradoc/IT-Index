@@ -7,12 +7,12 @@
 
 
 </head><body><div class="topnav">
-  <a href="https://walledlakerobotics.com/index.html"><img src="images/USAflag.png" height="30px" width="50px" alt="308 logo"></a> 
+  <a href="index.html"><img src="images/USAflag.png" height="30px" width="50px" alt="308 logo"></a> 
   <div class="hover"> 
     <a href="index.html">HOME</a>
-    <a href="https://walledlakerobotics.com/occra.html">1600s &amp; BEFORE</a>
+    <a href="1600s/1600s.html">1600s &amp; BEFORE</a>
     <a href="https://walledlakerobotics.com/308.html">1700s</a>
-    <a href="civilWar.html">1800s</a>
+    <a href="1800s/civilWar.html">1800s</a>
     <a href="https://walledlakerobotics.com/sponsors.html">1900s</a>
   </div>
 </div>
@@ -20,32 +20,60 @@
 <link rel="stylesheet" href="index.css">
 
 
+<script type="text/javascript">
+  var totalCount = 5;
+  function ChangeIt() {
+    var num = Math.ceil(Math.random() * totalCount);
+    var randomBackgroundElement = document.getElementById("randomBackground");
+    randomBackgroundElement.style.backgroundImage = "url('images/americanPainting" + num + ".jpg')";
+    
+    var randomFont = document.getElementById("americaTitle");
+    var randomFont2 = document.getElementById("americaDate");
+    if (num === 5 || num === 1) {
+      randomFont.style.color = "black"; // Change font color to red
+      randomFont2.style.color = "black";
+    } else {
+      randomFont.style.color = "white"; // Change font color to default
+      randomFont2.style.color = "white";
+    }
+  }
+</script>
 
-<div class="americaImageTop">
-    <div class="text-container">
-      <h1 class="title">America</h1>
-      <p class="date">Founded July 4, 1776</p>
-    </div>
-    <h1 class="authorText"></h1>
+<div class="americaImageTop" id="randomBackground">
+  <div class="text-container">
+    <h1 class="title" id="americaTitle">America</h1>
+    <p class="date" id="americaDate">Founded July 4, 1776</p>
   </div>
+  <h1 class="authorText"></h1>
+</div>
+
+<script type="text/javascript"> 
+  ChangeIt();
+</script>
 
 
   <body>
     <style>
-        .card {
-          flex-direction: column;
-          max-width: 300px;
-          background-color: #e4e4e4;
-          border-radius: 8px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          margin: 0 auto;
-          padding: 20px;
-          display: inline-block;
-          margin-left: 140px;
-          vertical-align: top;
-          
-        
-        }
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  flex-direction: row;
+  max-width: 300px;
+  background-color: #e4e4e4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+  padding: 20px;
+}
+
+
+
+
+
+
         
         .card-content {
           display: flex;
@@ -144,8 +172,10 @@
                   <h2 class="hover-line">America's Founding Documents</h2>
               
               </div>
-              <a href="https://example.com/link3">
-                <span class="card">
+              <div class= "cards">
+                
+              <a href="billOfRights.html">
+                <div class="card">
                   <div class="card-content">
                     <img alt="" src="https://www.uscourts.gov/sites/default/files/styles/lead/public/uscourts_bill_of_rights_0.png">
                     <div class="card-text">
@@ -153,9 +183,9 @@
                       <p></p>
                     </div>
                   </div>
-                </span>
+                </div>
               </a>
-              <a href="https://example.com/link3">
+              <a href="declarationOfIndependence.html">
               <div class="card">
                 <div class="card-content">
                   <img alt="" src="https://wpvip.edutopia.org/wp-content/uploads/2023/01/shutterstock_1663895323-crop.jpg">
@@ -166,7 +196,7 @@
                 </div>
               </div>
             </a>
-              <a href="https://example.com/link3">
+              <a href="constitution.html">
               <div class="card">
                 <div class="card-content">
                   <img alt="" src="https://uknow.uky.edu/sites/default/files/styles/uknow_story_image/public/GettyImages-171334997-constitution.jpg">
@@ -177,6 +207,7 @@
                 </div>
               </div>
             </a>
+          </div>
 
 
 
@@ -192,6 +223,8 @@
 
 <footer>
     <p>Made by Gabriel Finsilver and Noah Nicholson</p>
+    <p>Taught by Timothy Moore</p>
+    <p>Class of 2025, Walled Lake Northern</p>
   </footer>
 
 

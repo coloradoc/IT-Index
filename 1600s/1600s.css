@@ -5,7 +5,7 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #c0c0c0;
+    background-color: #967454;
     color: #ffffff;
     margin: 0;
     padding: 0;
@@ -42,7 +42,7 @@
   }
   
   .interactive-element {
-    background-color: #919191;
+    background-color: #967454;
     color: #000000;
     padding: 10px;
     border-radius: 5px;
@@ -51,7 +51,7 @@
   }
   
   .interactive-element:hover {
-    background-color: #919191;
+    background-color: #8b5e34;
     color: #ffffff;
   }
   
@@ -61,7 +61,8 @@
 
 
 
-  .americaImageTop {
+  .gettyAd {
+    background-image: url('images/natyuwu.jpeg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -75,21 +76,25 @@
     position: absolute;
     top: 10px;
     left: 500px;
-    left: clamp(50px, 30%, 100px);
+    left: clamp(200px, 30%, 500px);
     color: #ffffff;
   }
   
   .title {
-
-    font-size: 130px;
+    color: rgb(0, 0, 0);
+    font-size: clamp(40px, 8vw, 80px);
+    white-space: nowrap;
     font-family: Palatino, serif;
+    margin-right:30px;
   }
   
-  .date {
-
-    font-size: clamp(20px, 2vw, 60px);
-    top: 5px;
-    margin-top: 4%;
+  .dawn {
+    color: rgb(0, 0, 0);
+    font-size: clamp(10px, 2vw, 30px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+    font-size: 50px;
   }
 
   .authorText {
@@ -104,12 +109,12 @@
   }
 
   .info {
-    background-color: #d8d8d8;
+    background-color: #c4a78d;
     margin: 0 auto; /* Centers the info box horizontally */
     margin-top: 10px;
     text-align: center; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-    max-width: 1600px; 
+    max-width: 1000px; 
     padding: 10px;
     color: rgb(0, 0, 0);
     font-family: 'Dancing Script', cursive;
@@ -133,13 +138,14 @@
     margin-bottom: 20px;
   }
  /* Footer section */
- footer {
-	background-color: #818181;;
-	color: #fff;
-	padding: 30px;
-	align-items: center;
-  font-size: 24px;
-  }
+  
+  footer {
+    background-color: #75502d;;
+    color: #fff;
+    padding: 30px;
+    align-items: center;
+    font-size: 24px;
+    }
   .section{
     color: rgb(0, 0, 0);
     padding: 10px;
@@ -175,12 +181,4 @@
         padding-top: 10px;
         transition-duration: 0.2s;
       }
-      
-.goodLookinP {
-      background-color: #f4f4f4; /* Dark silver */
-      border: 4px solid #dcdcdc; /* Silver border */
-      color:rgb(0, 0, 0); 
-      padding: 20px; /* Padding for spacing */
-      max-width: 600px; /* Adjust as needed */
-      margin: 0 auto; /* Center the container */
-    }
+  
