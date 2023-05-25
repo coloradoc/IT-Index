@@ -93,7 +93,7 @@
     margin-top: 4%;
   }
 
-  .authorText {
+  .darkGradient {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -119,10 +119,11 @@
   .textInsideInfo {
     font-size: 28px;
     font-family: Arial, sans-serif;
+    text-align: left;
 
     color: rgb(0, 0, 0);
     margin: 20px;
-    padding: 3px;
+    padding: 20px;
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
     border-radius: 20px;
@@ -142,6 +143,7 @@
     align-items: center;
     font-size: 24px;
     }
+  
   .section{
     color: rgb(0, 0, 0);
     padding: 10px;
