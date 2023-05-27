@@ -1,0 +1,27 @@
+.topnav {
+    overflow: hidden;
+    padding:1px;
+    background-image: linear-gradient(to right, #b2b2b2, #c4c4c4);
+}
+
+.topnav a {
+    float: left;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 0px 30px;
+    padding-top: 6px;
+    text-decoration: none;
+    font-size: 24px;
+    transition-duration: 0.2s;
+}
+
+.topnav > img{
+    padding-top: 0px !important; 
+}
+
+.hover a:hover {
+    background-color: #ddd;
+    color: black;
+    padding-top: 10px;
+    transition-duration: 0.2s;
+}
