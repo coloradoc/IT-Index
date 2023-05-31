@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #map-container {
+            position: relative;
+            width: 736px; /* Adjust width as per your map image */
+        }
+
+        #section1{
+            width: 20px;
+        }
+
+        .map-section {
+            position: absolute;
+            cursor: pointer;
+        }
+
+        .testImages {
+            pointer-events: none;
+            position: absolute;
+
+            opacity: 50%;
+        }
+
+        .connecticut {
+            pointer-events: none;
+            position: absolute;
+            top: 190px;
+            left: 510px;
+
+            width: 73px;
+            height: 45px;
+
+            opacity: 50%;
+        }
+        .massachutsetts {
+            pointer-events: none;
+            position: absolute;
+            top: 145px;
+            left: 515px;
+
+            width: 130px;
+            height: 45px;
+
+            opacity: 50%;
+        }
+        .RI {
+            pointer-events: none;
+            position: absolute;
+            top: 190px;
+            left: 586px;
+
+            width: 28px;
+            height: 60px;
+
+            opacity: 50%;
+        }
+        .NH {
+            pointer-events: none;
+            position: absolute;
+            top: 10px;
+            left: 548px;
+
+            width: 65px;
+            height: 130px;
+
+            opacity: 50%;
+        }
+        .massachutsetts2 {
+            pointer-events: none;
+            position: absolute;
+            top: 7px;
+            left: 613px;
+
+            width: 110px;
+            height: 100px;
+
+            opacity: 50%;
+        }
+        .PN {
+            pointer-events: none;
+            position: absolute;
+            top: 195px;
+            left: 280px;
+
+            width: 170px;
+            height: 125px;
+
+            opacity: 50%;
+        }
+        .NJ {
+            pointer-events: none;
+            position: absolute;
+            top: 235px;
+            left: 445px;
+
+            width: 45px;
+            height: 127px;
+
+            opacity: 50%;
+        }
+        .DL {
+            pointer-events: none;
+            position: absolute;
+            top: 320px;
+            left: 420px;
+
+            width: 30px;
+            height: 80px;
+
+            opacity: 50%;
+        }
+        .VA {
+            pointer-events: none;
+            position: absolute;
+            top: 365px;
+            left: 190px;
+
+            width: 170px;
+            height: 140px;
+
+            opacity: 50%;
+        }
+        .NC {
+            pointer-events: none;
+            position: absolute;
+            top: 510px;
+            left: 150px;
+
+            width: 270px;
+            height: 100px;
+
+            opacity: 50%;
+        }
+        .SC {
+            pointer-events: none;
+            position: absolute;
+            top: 600px;
+            left: 140px;
+
+            width: 140px;
+            height: 140px;
+
+            opacity: 50%;
+        }
+        .GA {
+            pointer-events: none;
+            position: absolute;
+            top: 590px;
+            left: 75px;
+
+            width: 2px;
+            height: 2px;
+
+            opacity: 100%;
+        }
+        .GA2 {
+            pointer-events: none;
+            position: absolute;
+            top: 770px;
+            left: 180px;
+
+            width: 2px;
+            height: 2px;
+
+            opacity: 100%;
+        }
+        .GA3 {
+            pointer-events: none;
+            position: absolute;
+            top: 770px;
+            left: 65px;
+
+            width: 2px;
+            height: 2px;
+
+            opacity: 100%;
+        }
+        .GA4 {
+            pointer-events: none;
+            position: absolute;
+            top: 620px;
+            left: 25px;
+
+            width: 2px;
+            height: 2px;
+
+            opacity: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="map-container">
+        <!-- main background image -->
+        <img src="images/13colonies.jpg" alt="Map" usemap="#map" width="100%" height="auto"/>
+        
+        <!-- testing images -->
+        <img class="massachutsetts" src="images/USAflag.png" />
+        <img class="connecticut" src="images/USAflag.png"/>
+        <img class="RI" src="images/USAflag.png"/>
+        <img class="NH" src="images/USAflag.png"/>
+        <img class="massachutsetts2" src="images/USAflag.png"/>
+        <img class="PN" src="images/USAflag.png"/>
+        <img class="NJ" src="images/USAflag.png"/>
+        <img class="DL" src="images/USAflag.png"/>
+        <img class="VA" src="images/USAflag.png"/>
+        <img class="NC" src="images/USAflag.png"/>
+        <img class="SC" src="images/USAflag.png"/>
+        <img class="GA" src="images/USAflag.png"/>
+        <img class="GA2" src="images/USAflag.png"/>
+        <img class="GA3" src="images/USAflag.png"/>
+        <img class="GA4" src="images/USAflag.png"/>
+
+        <map name="map">
+            <area shape="rect" coords="100,100,200,200" class="map-section" id="section1" />
+            <area shape="circle" coords="300,150,50" class="map-section" id="section2" />
+            <area shape="circle" coords="210,670,70" class="map-section" id="section2" />
+            <area shape="poly" coords="620, 25, 590, 75, 770, 180, 770, 65, 620, 25" class="map-section" id="section2" />
+            <!-- Add more areas for other map sections -->
+        </map>
+    </div>
+
+    <div id="section1-info" class="info-section" style="display: none;">
+        <!-- Information for section 1 -->
+        <h2>Section 1</h2>
+        <p>This is information about section 1.</p>
+    </div>
+
+    <div id="section2-info" class="info-section" style="display: none;">
+        <!-- Information for section 2 -->
+        <h2>Section 2</h2>
+        <p>This is information about section 2.</p>
+    </div>
+
+    <!-- Add more info div elements for other sections -->
+
+    <script>
+        // Function to handle click events on map sections
+        function handleSectionClick(event) {
+            // Hide the previously displayed info div
+            const previouslyDisplayed = document.querySelector('.info-section[style="display: block;"]');
+            if (previouslyDisplayed) {
+                previouslyDisplayed.style.display = 'none';
+            }
+
+            // Show the corresponding info div based on the clicked section
+            const sectionId = event.target.id;
+            const infoDiv = document.querySelector(`#${sectionId}-info`);
+            if (infoDiv) {
+                infoDiv.style.display = 'block';
+            }
+        }
+
+        // Add click event listener to map sections
+        const mapSections = document.querySelectorAll('.map-section');
+        mapSections.forEach(section => {
+            section.addEventListener('click', handleSectionClick);
+        });
+    </script>
+</body>
+</html>
