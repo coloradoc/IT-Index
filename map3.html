@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #map-container {
+            position: relative;
+            width: 736px; /* Adjust width as per your map image */
+        }
+
+        #section1{
+            width: 20px;
+        }
+
+        .map-section {
+            position: absolute;
+            cursor: pointer;
+        }
+
+        .testImages {
+            pointer-events: none;
+            position: absolute;
+
+            opacity: 50%;
+        }
+
+        /* .connecticut {
+            pointer-events: none;
+            position: absolute;
+            top: 190px;
+            left: 510px;
+
+            width: 73px;
+            height: 45px;
+
+            opacity: 50%;
+        }
+        .massachutsetts {
+            pointer-events: none;
+            position: absolute;
+            top: 145px;
+            left: 515px;
+
+            width: 130px;
+            height: 45px;
+
+            opacity: 50%;
+        }
+        .RI {
+            pointer-events: none;
+            position: absolute;
+            top: 190px;
+            left: 586px;
+
+            width: 28px;
+            height: 60px;
+
+            opacity: 50%;
+        }
+        .NH {
+            pointer-events: none;
+            position: absolute;
+            top: 10px;
+            left: 548px;
+
+            width: 65px;
+            height: 130px;
+
+            opacity: 50%;
+        }
+        .massachutsetts2 {
+            pointer-events: none;
+            position: absolute;
+            top: 7px;
+            left: 613px;
+
+            width: 110px;
+            height: 100px;
+
+            opacity: 50%;
+        }
+        .PN {
+            pointer-events: none;
+            position: absolute;
+            top: 195px;
+            left: 280px;
+
+            width: 170px;
+            height: 125px;
+
+            opacity: 50%;
+        }
+        .NJ {
+            pointer-events: none;
+            position: absolute;
+            top: 235px;
+            left: 445px;
+
+            width: 50px;
+            height: 127px;
+
+            opacity: 50%;
+        }
+        .DL {
+            pointer-events: none;
+            position: absolute;
+            top: 320px;
+            left: 420px;
+
+            width: 30px;
+            height: 80px;
+
+            opacity: 50%;
+        }
+        .VA {
+            pointer-events: none;
+            position: absolute;
+            top: 365px;
+            left: 190px;
+
+            width: 170px;
+            height: 140px;
+
+            opacity: 50%;
+        }
+        .NC {
+            pointer-events: none;
+            position: absolute;
+            top: 510px;
+            left: 150px;
+
+            width: 270px;
+            height: 100px;
+
+            opacity: 50%;
+        }
+        .SC {
+            pointer-events: none;
+            position: absolute;
+            top: 600px;
+            left: 140px;
+
+            width: 140px;
+            height: 140px;
+
+            opacity: 50%;
+        }
+        .GA {
+            pointer-events: none;
+            position: absolute;
+            top: 590px;
+            left: 75px;
+
+            width: 2px;
+            height: 2px;
+
+            opacity: 100%;
+        }
+        .GA2 {
+            pointer-events: none;
+            position: absolute;
+            top: 770px;
+            left: 180px;
+
+            width: 2px;
+            height: 2px;
+
+            opacity: 100%;
+        }
+        .GA3 {
+            pointer-events: none;
+            position: absolute;
+            top: 770px;
+            left: 65px;
+
+            width: 2px;
+            height: 2px;
+
+            opacity: 100%;
+        }
+        .GA4 {
+            pointer-events: none;
+            position: absolute;
+            top: 620px;
+            left: 25px;
+
+            width: 2px;
+            height: 2px;
+
+            opacity: 100%;
+        }
+        .MD {
+            pointer-events: none;
+            position: absolute;
+            top: 325px;
+            left: 270px;
+
+            width: 150px;
+            height: 30px;
+
+            opacity: 50%;
+        }
+        .MD2 {
+            pointer-events: none;
+            position: absolute;
+            top: 325px;
+            left: 360px;
+
+            width: 60px;
+            height: 100px;
+
+            opacity: 50%;
+        }
+        .NY {
+            pointer-events: none;
+            position: absolute;
+            top: 105px;
+            left: 450px;
+
+            width: 60px;
+            height: 135px;
+
+            opacity: 50%;
+        } */
+
+    </style>
+</head>
+<body>
+    <div id="map-container">
+        <!-- main background image -->
+        <img src="images/13colonies.jpg" alt="Map" usemap="#map" width="100%" height="auto"/>
+
+        <map name="map">
+            <!-- MA -->
+            <div style="background-color: black;" coords="72,598,53,639,33,664,57,767,111,774,181,771,152,698">
+            <area target="" alt="SC" title="SC" href="" coords="81,595,84,609,87,615,105,630,114,655,126,674,137,690,147,699,160,713,186,768,215,743,265,708,293,663,257,625,211,612,169,586" shape="poly">
+            </div>
+            <area target="" alt="GA" title="GA" href="" coords="72,598,53,639,33,664,57,767,111,774,181,771,152,698" shape="poly">
+            <area target="" alt="NC" title="NC" href="" coords="124,578,201,592,249,615,297,657,329,642,390,614,386,582,417,509,188,507,137,547" shape="poly">
+            <area target="" alt="VA" title="VA" href="" coords="190,497,421,503,375,415,340,355,315,335,265,351,238,382" shape="poly">
+            <area target="" alt="MD" title="MD" href="" coords="410,457,350,359,333,337,291,337,262,349,274,327,411,327,426,395,455,403" shape="poly">
+            <area target="" alt="DL" title="DL" href="" coords="455,401,430,396,414,323,424,320,459,384" shape="poly">
+            <area target="" alt="NJ" title="NJ" href="" coords="457,232,443,275,461,291,462,306,434,327,458,361,488,330,491,292,481,267,491,251" shape="poly">
+            <area target="" alt="PN" title="PN" href="" coords="279,319,438,320,460,302,442,281,455,226,429,198,342,192,276,267" shape="poly">
+            <area target="" alt="NY" title="NY" href="" coords="342,191,511,59,517,142,508,245,561,239,562,253,502,274,497,256,461,228,432,190" shape="poly">
+            <area target="" alt="CT" title="CT" href="" coords="509,238,583,227,583,195,513,191" shape="poly">
+            <area target="" alt="RI" title="RI" href="" coords="586,190,593,244,622,233,604,185" shape="poly">
+            <area target="" alt="MA" title="MA" href="" coords="517,144,625,143,669,199,620,208,605,183,513,190" shape="poly">
+            <area target="" alt="NH" title="NH" href="" coords="551,137,567,54,582,13,599,11,607,100,625,125,619,142,553,146" shape="poly">
+            <area target="" alt="MA part 2" title="MA part 2" href="" coords="621,112,597,4,722,5,723,34" shape="poly">
+        </map>
+    </div>
+
+    <div id="section1-info" class="info-section" style="display: none;">
+        <!-- Information for section 1 -->
+        <h2>Section 1</h2>
+        <p>This is information about section 1.</p>
+    </div>
+
+    <div id="section2-info" class="info-section" style="display: none;">
+        <!-- Information for section 2 -->
+        <h2>Section 2</h2>
+        <p>This is information about section 2.</p>
+    </div>
+
+    <!-- Add more info div elements for other sections -->
+
+    <script>
+        // Function to handle click events on map sections
+        function handleSectionClick(event) {
+            // Hide the previously displayed info div
+            const previouslyDisplayed = document.querySelector('.info-section[style="display: block;"]');
+            if (previouslyDisplayed) {
+                previouslyDisplayed.style.display = 'none';
+            }
+
+            // Show the corresponding info div based on the clicked section
+            const sectionId = event.target.id;
+            const infoDiv = document.querySelector(`#${sectionId}-info`);
+            if (infoDiv) {
+                infoDiv.style.display = 'block';
+            }
+        }
+
+        // Add click event listener to map sections
+        const mapSections = document.querySelectorAll('.map-section');
+        mapSections.forEach(section => {
+            section.addEventListener('click', handleSectionClick);
+        });
+    </script>
+</body>
+</html>

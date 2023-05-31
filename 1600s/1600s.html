@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="./Civil War Interactive Website_files/homecss.css">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../header.css">
   <script src="./Civil War Interactive Website_files/javascript.js.download"></script>
 
 
 
-</head><body><div class="topnav">
+</head>
+<body>
+  <div class="topnav">
   <a href="../index.html"><img src="images/USAflag.png" height="30px" width="50px" alt="308 logo"></a> 
   <div class="hover"> 
     <a href="../index.html">HOME</a>
@@ -35,15 +40,184 @@
   <div class="gettyAd">
     <div class="text-container">
       <h1 class="title">The 1600s and Before</h1>
-      <p class="dawn">Amercias Dawn</p>
+      <p class="dawn">Amercia's Dawn</p>
     </div>
     <h1 class="authorText"></h1>
   </div>
 
 </head>
 
+<style>
+.awesomeCards img {
+  --f: .1; /* the parallax factor (the smaller the better) */
+  --r: 10px; /* radius */
+  
+  --_f: calc(100%*var(--f)/(1 + var(--f)));
+  --_a: calc(90deg*var(--f));
+  width: 250px; /* the image size */
+  aspect-ratio: calc(1 + var(--f));
+  object-fit: cover;
+  clip-path: inset(0 var(--_f) 0 0 round var(--r));
+  transform: perspective(400px) var(--_t,rotateY(var(--_a)));
+  transition: .5s;
+  cursor: pointer;
+}
+.awesomeCards img:hover {
+  clip-path: inset(0 0 0 var(--_f) round var(--r));
+  --_t:translateX(calc(-1*var(--_f))) rotateY(calc(-1*var(--_a)))
+}
+
+.awesomeCards {
+  margin: 0;
+  min-height: 40vh;
+  display: grid;
+  place-content: center;
+  grid-auto-flow: column;
+  gap: 30px;
+  background: #cde1f4;
+}
+
+h1{
+  color: black;
+  font-size: 100px;
+  text-align: center;
+}
+  .awesomeText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .awesomeText p {
+    font-size: 36px;
+    line-height: 1.5;
+    padding: 10px;
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+  
+</style>
 
 <body>
+
+<!-- the type of image is important for the illusion 
+   use an image having the main element in the center and a uniform background
+-->
+
+
+<style>
+  .image-container {
+    display: flex;
+    margin-bottom:20px;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .image-container img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+    transition: transform 0.3s ease;
+  }
+
+
+  .image-container p {
+    margin:20px;
+    padding: 5px;
+    color: black;
+    font-size: 40px;
+    line-height: 1.5;
+        background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    border-radius: 0 8px 8px 0;
+  }
+  .color{
+    background-color: #ceeeff;
+    margin: 20px;
+    
+  }
+
+
+
+</style>
+
+<div class="ice">
+  <h1>Before the 1600s</h1>
+</div>
+
+<div class="color">
+  <div class="image-container">
+    <img src="images/glac.jpg" alt="glacier">
+    <p>Imagine going back 2.4 million years in time. It was an incredible period known as the Great Ice Age, or the Pleistocene Epoch. The Earth was experiencing some major changes, and one of the most significant ones was the rise and fall of gigantic ice sheets and glaciers.</p>
+  </div>
+  </div>
+  
+<div class="color">
+  <div class="image-container">
+    <p>One of the significant consequences of the Great Ice Age was the formation of land bridges, which connected previously isolated landmasses and facilitated the migration of various organisms between continents. The most notable land bridge formed during this period was the Bering Land Bridge, connecting Asia and North America.</p>
+    <img src="images/bering.png" alt="land">
+  </div>
+  </div>
+
+<div class="color">
+  <div class="image-container">
+    <img src="images/bering-land-bridge.jpg" alt="land2">
+    <p>The formation of the Bering Land Bridge was a game-changer for the plants, animals, and people living in Asia. It's believed that our early ancestors, who lived in Asia, crossed over into North America using the Bering Land Bridge.  It was like building a highway for them to travel and explore new lands.</p>
+  </div>
+  </div>
+
+
+
+
+  <div class="ice">
+    <h1>The Native Americans</h1>
+  </div>
+
+
+<div class="awesomeCards">
+  <img src="images/cornCornCornCornCornCORN.jpg" alt="cornnnnnnn">
+  <img src="images/natvies.jpg" alt="awesome people" style="--f:.12;--r:5px">
+  <img src="images/uwuOuche.jpg" alt="uwu notices your arrow" style="--f:.08;--r:20px">
+  <img src="images/colorado.jpg" alt="my house 40k monthly rent" style="--f:.08;--r:20px">
+  <img src="images/towerThing.jpg" alt="tower made of stone" style="--f:.08;--r:20px">
+</div>
+  
+
+<div class="color">
+  <div class="image-container">
+    <img src="images/glac.jpg" alt="glacier">
+    <p>natives.</p>
+  </div>
+  </div>
+  
+<div class="color">
+  <div class="image-container">
+    <p>natives</p>
+    <img src="images/bering.png" alt="land">
+  </div>
+  </div>
+
+<div class="color">
+  <div class="image-container">
+    <img src="images/bering-land-bridge.jpg" alt="land2">
+    <p>natives</p>
+  </div>
+  </div>
+
+
+
 
   
 </body>

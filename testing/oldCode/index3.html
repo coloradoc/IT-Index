@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="./Civil War Interactive Website_files/homecss.css">
+  <script src="./Civil War Interactive Website_files/javascript.js.download"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"></head>
+
+
+</head><body><div class="topnav">
+  <a href="index.html"><img src="images/USAflag.png" height="30px" width="50px" alt="308 logo"></a> 
+  <div class="hover"> 
+    <a href="index.html">HOME</a>
+    <a href="1600s/1600s.html">1600s &amp; BEFORE</a>
+    <a href="https://walledlakerobotics.com/308.html">1700s</a>
+    <a href="1800s/civilWar.html">1800s</a>
+    <a href="https://walledlakerobotics.com/sponsors.html">1900s</a>
+  </div>
+</div>
+
+<link rel="stylesheet" href="index.css">
+
+
+<script type="text/javascript">
+  var totalCount = 5;
+  function ChangeIt() {
+    var num = Math.ceil(Math.random() * totalCount);
+    var randomBackgroundElement = document.getElementById("randomBackground");
+    randomBackgroundElement.style.backgroundImage = "url('images/americanPainting" + num + ".jpg')";
+    
+    var randomFont = document.getElementById("americaTitle");
+    var randomFont2 = document.getElementById("americaDate");
+    if (num === 5 || num === 1) {
+      randomFont.style.color = "black"; // Change font color to red
+      randomFont2.style.color = "black";
+    } else {
+      randomFont.style.color = "white"; // Change font color to default
+      randomFont2.style.color = "white";
+    }
+  }
+</script>
+
+<div class="americaImageTop" id="randomBackground">
+  <div class="text-container">
+    <h1 class="title" id="americaTitle">America</h1>
+    <p class="date" id="americaDate">Founded July 4, 1776</p>
+  </div>
+  <h1 class="authorText"></h1>
+</div>
+
+<script type="text/javascript"> 
+  ChangeIt();
+</script>
+
+
+  <body>
+    <style>
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  flex-direction: row;
+  max-width: 300px;
+  background-color: #e4e4e4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+  padding: 20px;
+}
+
+
+
+
+
+
+        
+        .card-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .card-text {
+          margin-top: 20px;
+          text-align: center;
+          color: #000000;
+        }
+        
+        .card img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          margin-bottom: 10px;
+        }
+        
+        .card h3 {
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+        
+        .card p {
+          font-size: 22px;
+          color: #333;
+          margin-bottom: 10px;
+        }
+        
+        .card a.ps-btn-secondary {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #0070ba;
+          color: #000000b0;
+          text-decoration: none;
+          border-radius: 4px;
+        }
+        
+        .centerText{
+            text-align: center; 
+            color: black; 
+            font-family:"Corbel Light", sans-serif; font-style: normal; 
+            font-weight: normal; 
+            text-decoration: none; 
+            font-size: 40pt; 
+            margin:5px;
+        }
+        .hover-line{
+            margin: 0px;
+        }
+        .white-bar {
+            width: 30%;
+            height: 4px;
+            background-color: #ffffff;
+            position: center;
+            top: 93%;
+            left: 0;
+            transform: translateY(-50%);
+            margin: 0 auto;
+        }
+        a{
+          color: rgb(0,0,0,0);
+        }
+        
+        </style>
+        </head>
+        
+        <div class="white-bar"></div>
+        <div class="centerText">
+            <h2 class="hover-line">American History</h2>
+        
+        </div>
+        
+        <body>
+
+            <div class = "info">
+                <h3>What is America?</h3>
+            
+                <div class = "textInsideInfo">
+                    <p>America is the idea of independence, justice, liberty, freedom and opportunity. The pursuit of creating a more perfect society and country. America was colonized by European settlers, leading to a struggle for freedom from British rule. The United States would emerge as a nation, gaining freedom and expanding its territories. America is a story of people striving for liberty, pursuing opportunities, and shaping a diverse and vibrant nation.
+
+
+
+
+                    </p>
+            
+                </div>
+            
+              </div>
+            <br>
+            <br>
+              <div class="white-bar"></div>
+              <div class="centerText">
+                  <h2 class="hover-line">America's Founding Documents</h2>
+              
+              </div>
+              <div class= "cards">
+                
+              <a href="billOfRights.html">
+                <div class="card">
+                  <div class="card-content">
+                    <img alt="" src="https://www.uscourts.gov/sites/default/files/styles/lead/public/uscourts_bill_of_rights_0.png">
+                    <div class="card-text">
+                      <h3>Bill of Rights</h3>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="declarationOfIndependence.html">
+              <div class="card">
+                <div class="card-content">
+                  <img alt="" src="https://wpvip.edutopia.org/wp-content/uploads/2023/01/shutterstock_1663895323-crop.jpg">
+                  <div class="card-text">
+                    <h3>Declaration of Independence</h3>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </a>
+              <a href="constitution.html">
+              <div class="card">
+                <div class="card-content">
+                  <img alt="" src="https://uknow.uky.edu/sites/default/files/styles/uknow_story_image/public/GettyImages-171334997-constitution.jpg">
+                  <div class="card-text">
+                    <h3>Constitution</h3>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+  </body>
+
+
+  <div class="americaImage1600s">
+      <h1 class="title" id="americaTitle">1600s and Before</h1>
+      <p class="date" id="americaDate">Click here to view</p>
+    <h1></h1>
+  </div>
+<style>
+  .americaImage1600s{
+    background-image: url('1600s/images/bigChungus.jpeg');
+  padding: 1rem;
+  color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      red, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+  }
+  
+</style>
+
+
+
+
+
+
+<footer>
+    <p>Made by Gabriel Finsilver and Noah Nicholson</p>
+    <p>Taught by Timothy Moore</p>
+    <p>Class of 2025, Walled Lake Northern</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
