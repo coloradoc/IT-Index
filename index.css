@@ -11,7 +11,7 @@
     padding: 0;
   }
   
-  header {
+  header { /*Note: Im pretty sure this does nothing since <header> is never used */
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     padding: 20px;
     text-align: center;
@@ -149,32 +149,7 @@
     border-radius: 20px;  
 
   }
-  .topnav {
-    overflow: hidden;
-    padding:1px;
-    background-image: linear-gradient(to right, #b2b2b2, #c4c4c4);
-  }
-  
-    .topnav a {
-      float: left;
-      color: rgb(0, 0, 0);
-      text-align: center;
-      padding: 0px 30px;
-      padding-top: 6px;
-      text-decoration: none;
-      font-size: 24px;
-      transition-duration: 0.2s;
-    }
-    .topnav > img{
-      padding-top: 0px !important; 
-    }
-  
-      .hover a:hover {
-        background-color: #ddd;
-        color: black;
-        padding-top: 10px;
-        transition-duration: 0.2s;
-      }
+
       
 .goodLookinP {
       background-color: #f4f4f4; /* Dark silver */
