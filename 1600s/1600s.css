@@ -5,7 +5,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #c0c0c0;
+  background-color: #adc9e5;
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -19,8 +19,8 @@ header {
 
 h1 {
   margin: 0;
-  font-size: 32px;
-  color: #ffffff;
+  color: black;
+  font-size: 100px;
 }
 
 .container {
@@ -90,6 +90,7 @@ h1 {
   left: clamp(200px, 30%, 500px);
   color: #ffffff;
 }
+
 
 .title {
   color: rgb(0, 0, 0);
