@@ -119,44 +119,35 @@
             }
         }
 
+        //variable to keep track of how much the image width is being changed
+        var previousMapSize = 736.0;
+
         // Add click event listener to map sections
         const mapSections = document.querySelectorAll('.map-section');
         mapSections.forEach(section => {
             section.addEventListener('click', handleSectionClick);
         });
 
+        //change sizes of map areas to adjust for resizing
         function resizeArea() {
-            mapSections.forEach(section => {
-            let coordsArray = JSON.parse("[" + section.getAttribute("coords") + "]");
-            //console.log(coordsArray);
+            console.log('hello');
             const imageWidth = document.querySelector('#bruh').clientWidth;
-            //console.log(image.clientWidth);
-
-            for (let i = 0; i < coordsArray.length; i++) {
-                coordsArray[i] *= (imageWidth/736.0);
-            }
-            //console.log(coordsArray);
-            section.setAttribute("coords", coordsArray.toString());
-        });
+            mapSections.forEach(section => {
+                let coordsArray = JSON.parse("[" + section.getAttribute("coords") + "]");
+                
+                //console.log(image.clientWidth);
+                for (let i = 0; i < coordsArray.length; i++) {
+                    coordsArray[i] *= (imageWidth/previousMapSize);
+                }
+                
+                //console.log(coordsArray);
+                section.setAttribute("coords", coordsArray.toString());
+            });
+            previousMapSize = imageWidth;
         };
         
-
-        window.onresize = resizeArea;
-
-        //Resizes the coords of the map sections in relation to the width of the image, allowing us to
-        //change the image width without messing up the coordinates.
-        mapSections.forEach(section => {
-            let coordsArray = JSON.parse("[" + section.getAttribute("coords") + "]");
-            //console.log(coordsArray);
-            const imageWidth = document.querySelector('#bruh').clientWidth;
-            //console.log(image.clientWidth);
-
-            for (let i = 0; i < coordsArray.length; i++) {
-                coordsArray[i] *= (imageWidth/736.0);
-            }
-            //console.log(coordsArray);
-            section.setAttribute("coords", coordsArray.toString());
-        });
+        resizeArea();
+        window.addEventListener('resize', resizeArea); //resize area everytime the screen is resized
 
     </script>
 </body>
