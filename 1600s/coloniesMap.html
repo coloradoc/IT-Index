@@ -44,72 +44,63 @@
         .mapImage {
             align-self: center;
             display: block;
-            margin-left: auto;
+            margin-left: 20px;
             margin-right: auto;
+            margin-bottom: 50px;
+        }
+        
+        p {
+            margin:20px;
+            padding: 5px;
+            color: black;
+            font-size: 40px;
+            line-height: 1.5;
+        }
+
+        .flexing {
+            display: flex;
+            flex-direction: row;
         }
 
     </style>
 </head>
 <body>
-    <h1>Interactive Map</h1>
+    <h1>Interactive Map</h1>   
     <p>Click a colony to learn more about it</p>
-    <div id="map-container" class="mapImage">
-        <!-- main background image -->
-        <img src="images/13colonies.jpg" id="bruh" class="mapImage" alt="Map" usemap="#map" width="70%" height="auto"/>
+    <div class="flexing">
+        
+        <div id="map-container" class="mapImage">
+            <!-- main background image -->
+            <img src="images/13colonies.jpg" id="bruh" class="mapImage" alt="Map" usemap="#map" width="70%" height="auto"/>
 
-        <map name="map">
-            <!-- "title" is the thing that shows up when your mouse hovers over it -->
-            <area class="map-section" id="sc" alt="SC" title="South Carolina" coords="81,595,84,609,87,615,105,630,114,655,126,674,137,690,147,699,160,713,186,768,215,743,265,708,293,663,257,625,211,612,169,586" shape="poly">
-            <area class="map-section" id="ga" alt="GA" title="Georgia" coords="72,598,53,639,33,664,57,767,111,774,181,771,152,698" shape="poly">
-            <area class="map-section" id="nc" alt="NC" title="North Carolina" coords="124,578,201,592,249,615,297,657,329,642,390,614,386,582,417,509,188,507,137,547" shape="poly">
-            <area class="map-section" id="va" alt="VA" title="Virginia" coords="190,497,421,503,375,415,340,355,315,335,265,351,238,382" shape="poly">
-            <area class="map-section" id="md" alt="MD" title="Maryland" coords="410,457,350,359,333,337,291,337,262,349,274,327,411,327,426,395,455,403" shape="poly">
-            <area class="map-section" id="dl" alt="DL" title="Delaware" coords="455,401,430,396,414,323,424,320,459,384" shape="poly">
-            <area class="map-section" id="nj" alt="NJ" title="New Jersey" coords="457,232,443,275,461,291,462,306,434,327,458,361,488,330,491,292,481,267,491,251" shape="poly">
-            <area class="map-section" id="pn" alt="PN" title="Pennsylvania" coords="279,319,438,320,460,302,442,281,455,226,429,198,342,192,276,267" shape="poly">
-            <area class="map-section" id="ny" alt="NY" title="New York" coords="342,191,511,59,517,142,508,245,561,239,562,253,502,274,497,256,461,228,432,190" shape="poly">
-            <area class="map-section" id="ct" alt="CT" title="Connecticut" coords="509,238,583,227,583,195,513,191" shape="poly">
-            <area class="map-section" id="ri" alt="RI" title="Rhode Island" coords="586,190,593,244,622,233,604,185" shape="poly">
-            <area class="map-section" id="ma" alt="MA" title="Massachusetts" coords="517,144,625,143,669,199,620,208,605,183,513,190" shape="poly">
-            <area class="map-section" id="nh" alt="NH" title="New Hampshire" coords="551,137,567,54,582,13,599,11,607,100,625,125,619,142,553,146" shape="poly">
-            <area class="map-section" id="ma" alt="MA part 2" title="Also Massachusetts" coords="621,112,597,4,722,5,723,34" shape="poly">
-        </map>
+            <map name="map">
+                <!-- "title" is the thing that shows up when your mouse hovers over it -->
+                <area class="map-section" id="southCarolina" alt="SC" title="South Carolina" coords="81,595,84,609,87,615,105,630,114,655,126,674,137,690,147,699,160,713,186,768,215,743,265,708,293,663,257,625,211,612,169,586" shape="poly">
+                <area class="map-section" id="ga" alt="GA" title="Georgia" coords="72,598,53,639,33,664,57,767,111,774,181,771,152,698" shape="poly">
+                <area class="map-section" id="nc" alt="NC" title="North Carolina" coords="124,578,201,592,249,615,297,657,329,642,390,614,386,582,417,509,188,507,137,547" shape="poly">
+                <area class="map-section" id="va" alt="VA" title="Virginia" coords="190,497,421,503,375,415,340,355,315,335,265,351,238,382" shape="poly">
+                <area class="map-section" id="md" alt="MD" title="Maryland" coords="410,457,350,359,333,337,291,337,262,349,274,327,411,327,426,395,455,403" shape="poly">
+                <area class="map-section" id="dl" alt="DL" title="Delaware" coords="455,401,430,396,414,323,424,320,459,384" shape="poly">
+                <area class="map-section" id="nj" alt="NJ" title="New Jersey" coords="457,232,443,275,461,291,462,306,434,327,458,361,488,330,491,292,481,267,491,251" shape="poly">
+                <area class="map-section" id="pn" alt="PN" title="Pennsylvania" coords="279,319,438,320,460,302,442,281,455,226,429,198,342,192,276,267" shape="poly">
+                <area class="map-section" id="ny" alt="NY" title="New York" coords="342,191,511,59,517,142,508,245,561,239,562,253,502,274,497,256,461,228,432,190" shape="poly">
+                <area class="map-section" id="ct" alt="CT" title="Connecticut" coords="509,238,583,227,583,195,513,191" shape="poly">
+                <area class="map-section" id="ri" alt="RI" title="Rhode Island" coords="586,190,593,244,622,233,604,185" shape="poly">
+                <area class="map-section" id="ma" alt="MA" title="Massachusetts" coords="517,144,625,143,669,199,620,208,605,183,513,190" shape="poly">
+                <area class="map-section" id="nh" alt="NH" title="New Hampshire" coords="551,137,567,54,582,13,599,11,607,100,625,125,619,142,553,146" shape="poly">
+                <area class="map-section" id="ma" alt="MA part 2" title="Also Massachusetts" coords="621,112,597,4,722,5,723,34" shape="poly">
+            </map>
+        </div>
+
+        <div id="southCarolina-info" class="info-section" style="display: none;">
+            <!-- Information for section 1 -->
+            <h2>Section 1</h2>
+            <p class="image-container">This is information about section 1.</p>
+        </div>
     </div>
-
-    <div id="section1-info" class="info-section" style="display: none;">
-        <!-- Information for section 1 -->
-        <h2>Section 1</h2>
-        <p>This is information about section 1.</p>
-    </div>
-
-    <div id="section2-info" class="info-section" style="display: none;">
-        <!-- Information for section 2 -->
-        <h2>Section 2</h2>
-        <p>This is information about section 2.</p>
-    </div>
-
-    <!-- Add more info div elements for other sections -->
+  
 
     <script>
-
-        /* This chunk of code resizes the coords of Georgia in relation to the width of the image, allowing you to
-        change the image width without messing up the coordinates. If you can turn this into a function that's applied to 
-        every element with the class "map-section" then that would be pretty epic - Noah */
-        
-        let coordsArray = JSON.parse("[" + document.getElementById("ga").getAttribute("coords") + "]");
-        //console.log(coordsArray);
-        const imageWidth = document.querySelector('#bruh').clientWidth;
-        //console.log(image.clientWidth);
-
-        for (let i = 0; i < coordsArray.length; i++) {
-            coordsArray[i] *= (imageWidth/736.0);
-        }
-        //console.log(coordsArray);
-        document.getElementById("ga").setAttribute("coords", coordsArray.toString());
-
-
-
-
 
         // Function to handle click events on map sections
         function handleSectionClick(event) {
@@ -132,6 +123,39 @@
         const mapSections = document.querySelectorAll('.map-section');
         mapSections.forEach(section => {
             section.addEventListener('click', handleSectionClick);
+        });
+
+        function resizeArea() {
+            mapSections.forEach(section => {
+            let coordsArray = JSON.parse("[" + section.getAttribute("coords") + "]");
+            //console.log(coordsArray);
+            const imageWidth = document.querySelector('#bruh').clientWidth;
+            //console.log(image.clientWidth);
+
+            for (let i = 0; i < coordsArray.length; i++) {
+                coordsArray[i] *= (imageWidth/736.0);
+            }
+            //console.log(coordsArray);
+            section.setAttribute("coords", coordsArray.toString());
+        });
+        };
+        
+
+        window.onresize = resizeArea;
+
+        //Resizes the coords of the map sections in relation to the width of the image, allowing us to
+        //change the image width without messing up the coordinates.
+        mapSections.forEach(section => {
+            let coordsArray = JSON.parse("[" + section.getAttribute("coords") + "]");
+            //console.log(coordsArray);
+            const imageWidth = document.querySelector('#bruh').clientWidth;
+            //console.log(image.clientWidth);
+
+            for (let i = 0; i < coordsArray.length; i++) {
+                coordsArray[i] *= (imageWidth/736.0);
+            }
+            //console.log(coordsArray);
+            section.setAttribute("coords", coordsArray.toString());
         });
 
     </script>
