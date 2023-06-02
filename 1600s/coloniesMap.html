@@ -42,11 +42,8 @@
         }
 
         .mapImage {
-            align-self: center;
-            display: block;
-            margin-left: 20px;
-            margin-right: auto;
-            margin-bottom: 50px;
+            margin:30px;
+
         }
         
         p {
@@ -59,6 +56,7 @@
 
         .flexing {
             display: flex;
+            margin:0px;
             flex-direction: row;
         }
         .color{
@@ -90,7 +88,7 @@
   
   
     .image-container p {
-      margin:20px;
+      margin:10px;
       padding: 5px;
       color: black;
       font-size: 40px;
@@ -103,6 +101,7 @@
     .color{
       background-color: #ceeeff;
       margin: 20px;
+
       
     }
     .imagebox h1{
@@ -126,10 +125,26 @@
       border-radius: 20px;
       border-radius: 0 8px 8px 0;
     }
+    
+
   
   
   
   </style>
+  <style>
+    g:hover polygon {
+      fill: orange;
+    }
+
+    polygon {
+      fill: lime;
+      stroke: purple;
+      stroke-width: 1;
+      transition: fill 0.5s;
+      
+    }
+  </style>
+
 </head>
 <body>
     <div class="mapTitle">
@@ -138,8 +153,8 @@
 </div> 
     <div class="color">
     <div class="flexing">
+
         
-        <div id="map-container" class="mapImage">
             <!-- main background image -->
             <img src="images/13colonies.jpg" id="bruh" class="mapImage" alt="Map" usemap="#map" width="66%" height="auto"/>
 
@@ -160,7 +175,9 @@
                 <area class="map-section" id="nh" alt="NH" title="New Hampshire" coords="551,137,567,54,582,13,599,11,607,100,625,125,619,142,553,146" shape="poly">
                 <area class="map-section" id="ma" alt="MA part 2" title="Also Massachusetts" coords="621,112,597,4,722,5,723,34" shape="poly">
             </map>
-        </div>
+            
+
+
 
         <div id="southCarolina-info" class="info-section" style="display: none;">
             <!-- Information for section 1 -->
