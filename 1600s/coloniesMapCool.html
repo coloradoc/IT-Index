@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../header.css">
+        <script src="./Civil War Interactive Website_files/javascript.js.download"></script>
+      
+      
+      </head><body><div class="topnav">
+        <a href="index.html"><img src="../images/USAflag.png" height="30px" width="50px" alt="US Flag" title="Home"></a> 
+        <div class="hover"> 
+          <a href="index.html">HOME</a>
+          <a href="1600s/1600s.html">1600s &amp; BEFORE</a>
+          <a href="https://walledlakerobotics.com/308.html">1700s</a>
+          <a href="1800s/civilWar.html">1800s</a>
+          <a href="https://walledlakerobotics.com/sponsors.html">1900s</a>
+        </div>
+      </div>
+    
+<link rel="stylesheet" href="1600s.css">
+
+<head>
+    <style>
+        #map-container {
+            position: relative;
+            width: 736px; /* Adjust width as per your map image */
+        }
+
+        #section1{
+            width: 20px;
+        }
+
+        .map-section {
+            position: absolute;
+            cursor: pointer;
+        }
+
+        .testImages {
+            pointer-events: none;
+            position: absolute;
+
+            opacity: 50%;
+        }
+
+        .mapImage {
+            margin:30px;
+
+        }
+        
+        p {
+            margin:0px;
+            padding: 0px;
+            color: black;
+            font-size: 40px;
+            line-height: 1.5;
+        }
+
+        .flexing {
+            display: flex;
+            margin:0px;
+            flex-direction: row;
+        }
+        .color{
+    background-color: #ceeeff;
+    margin: 20px;
+    
+  }
+    </style>
+
+<style>
+    .image-container {
+      display: flex;
+      margin-bottom:20px;
+      align-items: center;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  
+    .image-container img {
+      width: 500px;
+      height: 300px;
+      margin: 10px;
+      object-fit: cover;
+      border-radius: 8px 0 0 8px;
+      transition: transform 0.3s ease;
+    }
+  
+  
+    .image-container p {
+      margin:10px;
+      padding: 5px;
+      color: black;
+      font-size: 40px;
+      line-height: 1.5;
+          background-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+      border-radius: 20px;
+      border-radius: 0 8px 8px 0;
+    }
+    .color{
+      background-color: #ceeeff;
+      margin: 20px;
+
+      
+    }
+    .imagebox h1{
+      color:rgb(92, 92, 92);
+      font-size:24px;
+      
+    }
+    h1 {
+  margin: 0;
+  color: black;
+  font-size: 60px;
+}
+    .mapTitle{
+        margin: 10px;
+        margin-bottom:2px;
+        padding:5px;
+        padding-left:30px;
+        line-height: 1.5;
+          background-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+      border-radius: 20px;
+      border-radius: 0 8px 8px 0;
+    }
+    
+
+  
+  
+  
+  </style>
+  <style>
+        .map-section {
+            fill: rgb(2,50,50, .9);
+            stroke: transparent;
+            transition: fill 0.5s;
+        }
+
+        .map-section:hover {
+            fill: rgb(200,50,50, .8);
+        }
+  </style>
+
+</head>
+<body>
+    <div class="mapTitle">
+        <h1>Interactive Map</h1>
+    <p>Click a colony to learn more about it</p>
+</div> 
+<div class="color">
+  <div class="flexing">
+    <svg viewBox="0 0 1800 1800" style="position: relative; width: 100%; height: auto;">
+      <!-- main background image -->
+  
+      <!-- "title" is the thing that shows up when your mouse hovers over it -->
+      <polygon class="map-section" id="southCarolina" title="South Carolina" points="81,595,84,609,87,615,105,630,114,655,126,674,137,690,147,699,160,713,186,768,215,743,265,708,293,663,257,625,211,612,169,586"/>
+      <polygon class="map-section" id="ga" title="Georgia" points="72,598,53,639,33,664,57,767,111,774,181,771,152,698"/>
+      <polygon class="map-section" id="nc" title="North Carolina" points="124,578,201,592,249,615,297,657,329,642,390,614,386,582,417,509,188,507,137,547"/>
+      <polygon class="map-section" id="va" title="Virginia" points="190,497,421,503,375,415,340,355,315,335,265,351,238,382"/>
+      <polygon class="map-section" id="md" title="Maryland" points="410,457,350,359,333,337,291,337,262,349,274,327,411,327,426,395,455,403"/>
+      <polygon class="map-section" id="dl" title="Delaware" points="455,401,430,396,414,323,424,320,459,384"/>
+      <polygon class="map-section" id="nj" title="New Jersey" points="457,232,443,275,461,291,462,306,434,327,458,361,488,330,491,292,481,267,491,251"/>
+      <polygon class="map-section" id="pn" title="Pennsylvania" points="279,319,438,320,460,302,442,281,455,226,429,198,342,192,276,267"/>
+      <polygon class="map-section" id="ny" title="New York" points="342,191,511,59,517,142,508,245,561,239,562,253,502,274,497,256,461,228,432,190"/>
+      <polygon class="map-section" id="ct" title="Connecticut" points="509,238,583,227,583,195,513,191"/>
+      <polygon class="map-section" id="ri" title="Rhode Island" points="586,190,593,244,622,233,604,185"/>
+      <polygon class="map-section" id="ma" title="Massachusetts" points="517,144,625,143,669,199,620,208,605,183,513,190"/>
+      <polygon class="map-section" id="nh" title="New Hampshire" points="551,137,567,54,582,13,599,11,607,100,625,125,619,142,553,146"/>
+      <polygon class="map-section" id="ma2" title="Also Massachusetts" points="621,112,597,4,722,5,723,34"/>
+  </svg>
+            
+
+
+
+        <div id="southCarolina-info" class="info-section" style="display: none;">
+            <!-- Information for section 1 -->
+            <h2>Section 1</h2>
+            <p class="image-container">This is information about section 1.</p>
+        </div>
+    </div>
+</div>
+
+    <script>
+
+        // Function to handle click events on map sections
+        function handleSectionClick(event) {
+            // Hide the previously displayed info div
+            
+            const previouslyDisplayed = document.querySelector('.info-section[style="display: block;"]');
+            if (previouslyDisplayed) {
+                previouslyDisplayed.style.display = 'none';
+            }
+
+            // Show the corresponding info div based on the clicked section
+            const sectionId = event.target.id;
+            const infoDiv = document.querySelector(`#${sectionId}-info`);
+            if (infoDiv) {
+                infoDiv.style.display = 'block';
+            }
+        }
+
+        //variable to keep track of how much the image width is being changed
+        var previousMapSize = 736.0;
+
+        // Add click event listener to map sections
+        const mapSections = document.querySelectorAll('.map-section');
+        mapSections.forEach(section => {
+            section.addEventListener('click', handleSectionClick);
+        });
+
+        //change sizes of map areas to adjust for resizing
+        function resizeArea() {
+            console.log('hello');
+            const imageWidth = document.querySelector('#bruh').clientWidth;
+            mapSections.forEach(section => {
+                let coordsArray = JSON.parse("[" + section.getAttribute("coords") + "]");
+                
+                //console.log(image.clientWidth);
+                for (let i = 0; i < coordsArray.length; i++) {
+                    coordsArray[i] *= (imageWidth/previousMapSize);
+                }
+                
+                //console.log(coordsArray);
+                section.setAttribute("coords", coordsArray.toString());
+            });
+            previousMapSize = imageWidth;
+        };
+        
+        resizeArea();
+        window.addEventListener('resize', resizeArea); //resize area everytime the screen is resized
+
+    </script>
+</body>
+</html>
