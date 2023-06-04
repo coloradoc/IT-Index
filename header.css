@@ -1,3 +1,13 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+ }
+
 .topnav {
     overflow: hidden;
     padding:1px;
