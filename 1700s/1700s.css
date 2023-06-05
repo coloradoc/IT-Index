@@ -5,7 +5,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #adc9e5;
+  background-color: #c8bfab;
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -62,7 +62,7 @@ h1 {
 
 
 .gettyAd {
-  background-image: url('images/natyuwu.jpeg');
+  background-image: url('images/decofin.jpg');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -86,14 +86,14 @@ h1 {
 .text-container {
   position: absolute;
   top: 10px;
-  left: 500px;
-  left: clamp(200px, 30%, 500px);
-  color: #ffffff;
+  left: 400px;
+  left: clamp(100px, 20%, 250px);
+  color: #c8bfab;
 }
 
 
 .title {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: clamp(40px, 8vw, 80px);
   white-space: nowrap;
   font-family: Palatino, serif;
@@ -101,7 +101,7 @@ h1 {
 }
 
 .dawn {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: clamp(10px, 2vw, 30px);
   margin-top: 10px;
   margin-bottom: 10px;
@@ -114,7 +114,7 @@ h1 {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-image: linear-gradient(to bottom, rgba(135, 128, 177, 0), rgb(131, 133, 150));
+  background-image: linear-gradient(to bottom, rgba(135, 128, 177, 0), rgb(210, 210, 190));
   padding: 20px;
   font-size: 26px;
   color: #ffffff;
