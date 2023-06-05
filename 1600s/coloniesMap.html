@@ -34,13 +34,6 @@
             cursor: pointer;
         }
 
-        .testImages {
-            pointer-events: none;
-            position: absolute;
-
-            opacity: 50%;
-        }
-
         .mapImage {
             margin:30px;
 
@@ -59,11 +52,6 @@
             margin:0px;
             flex-direction: row;
         }
-        .color{
-    background-color: #ceeeff;
-    margin: 20px;
-    
-  }
     </style>
 
 <style>
@@ -157,14 +145,14 @@
 
     <div class="color">
         <div class="flexing">
-
+            
             <!-- main background image -->
-            <img src="images/13colonies.jpg" id="bruh" class="mapImage" alt="Map" usemap="#map" width="35%" height="auto"/>
+            <img src="images/13colonies.jpg" id="backgroundImage" class="mapImage" alt="Map" usemap="#map" width="35%" height="auto"/>
 
             <map name="map">
 
                 <!-- "title" is the thing that shows up when your mouse hovers over it -->
-                <area class="map-section" id="southCarolina" alt="SC" title="South Carolina" coords="78,591,84,609,87,615,105,630,119,651,140,684,164,711,190,767,215,743,266,709,293,663,246,616,211,612,159,587" shape="poly">
+                <area class="map-section" id="sc" alt="SC" title="South Carolina" coords="78,591,84,609,87,615,105,630,119,651,140,684,164,711,190,767,215,743,266,709,293,663,246,616,211,612,159,587" shape="poly">
                 <area class="map-section" id="ga" alt="GA" title="Georgia" coords="60,601,61,628,53,648,39,662,37,684,53,747,65,769,104,776,146,778,171,769,182,769,159,721,145,699,124,673,106,647,97,629,81,616,73,597" shape="poly">
                 <area class="map-section" id="nc" alt="NC" title="North Carolina" coords="417,509,188,507,174,519,155,533,137,547,126,572,122,578,178,587,207,604,247,607,302,661,328,660,369,644,401,594,431,544" shape="poly">
                 <area class="map-section" id="va" alt="VA" title="Virginia" coords="423,506,189,503,190,474,217,436,232,397,253,360,274,352,283,341,306,338,317,335,332,348,343,353,349,368,362,375,361,408,400,429,419,486" shape="poly">
@@ -183,7 +171,7 @@
 
 
 
-        <div id="southCarolina-info" class="info-section" style="display: none;">
+        <div id="sc-info" class="info-section" style="display: none;">
             <div class="color">
                 
                   <div class="image-container">
@@ -426,7 +414,7 @@
         //change sizes of map areas to adjust for resizing
         function resizeArea() {
             console.log('hello');
-            const imageWidth = document.querySelector('#bruh').clientWidth;
+            const imageWidth = document.querySelector('#backgroundImage').clientWidth;
             mapSections.forEach(section => {
                 let coordsArray = JSON.parse("[" + section.getAttribute("coords") + "]");
                 
