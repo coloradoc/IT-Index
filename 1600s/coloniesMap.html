@@ -37,16 +37,17 @@
 
         .mapImage {
             margin:30px;
+            border-radius: 20px;
 
         }
         
-        p {
+        /* p {
             margin:0px;
             padding: 0px;
             color: black;
             font-size: 30px;
             line-height: 1.5;
-        }
+        } */
 
         .flexing {
             display: flex;
@@ -71,11 +72,18 @@
         background-color: rgba(255, 255, 255, 0.2);
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
         border-radius: 20px;
-        border-radius: 0 8px 8px 0;
     }
 
     .pageTitle h1 {
         font-size: 54px;
+    }
+
+    .pageTitle p {
+        margin:0px;
+        padding: 0px;
+        color: black;
+        font-size: 30px;
+        line-height: 1.5;
     }
 
     /* .info-section {
@@ -84,11 +92,12 @@
 
     .image-container {
       display: flex;
-      margin-bottom:20px;
+      /* margin-bottom:20px; */
       align-items: center;
-      margin: 0 auto;
+      margin-left: 10px;
       flex-direction: column;
       overflow: hidden;
+      width:50%;
       padding: 10px;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -100,7 +109,7 @@
       margin: 10px;
       float:right;
       object-fit: cover;
-      border-radius: 8px 0 0 8px;
+      border-radius: 8px;
       transition: transform 0.3s ease;
     }
   
@@ -113,7 +122,6 @@
           background-color: rgba(255, 255, 255, 0.2);
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
       border-radius: 20px;
-      border-radius: 0 8px 8px 0;
     }
 
     .image-container h1 {
@@ -125,8 +133,9 @@
     .title-container {
       color: black;
       padding: 10px;
+      width:50%;
+      margin-right: 10px;
       font-size: 30px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
       border-radius: 10px;
     }
 
@@ -150,7 +159,12 @@
     .colonyNameImageFlexing {
         display: flex;
         flex-direction: row;
-        margin: 10px;
+        margin-bottom: 10px;
+    }
+
+    .colonyInfo {
+        width: auto; 
+        margin-left: 0px;
     }
     
   </style>
@@ -208,7 +222,7 @@
 
 
 
-            <div id="sc-info" class="info-section color" style="display: none;;">
+            <div id="sc-info" class="info-section color" style="display: none;">
 
                 <div class="colonyNameImageFlexing">
                     <div class="title-container">
@@ -222,8 +236,8 @@
                     </div>
                 </div>
 
-                <div class="image-container">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur, quasi, reprehenderit earum temporibus velit labore tempore vero ipsam in eveniet eaque assumenda, ullam tenetur odio at blanditiis iusto expedita.</p>
+                <div class="image-container colonyInfo">
+                    <p>South Carolina was a royal colony established by King Charles II in 1663. Later in 1670, the modern-day town of Charleston was established. Originally, North and South Carolina were one colony (Carolina) before being split up into two.</p>
                 </div>
 
             </div>
@@ -243,8 +257,8 @@
                     </div>
                 </div>
 
-                <div class="image-container">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur, quasi, reprehenderit earum temporibus velit labore tempore vero ipsam in eveniet eaque assumenda, ullam tenetur odio at blanditiis iusto expedita.</p>
+                <div class="image-container colonyInfo">
+                    <p>Georgia was the last colony of the 13 colonies to be established. Georgia was established by James Oglethrope. He wanted Georgia to serve as a refuge for those who are poor and in debt, as well as act as a buffer between English colonies and Spanish Colonies. The colony was named after King George II.</p>
                 </div>
 
             </div>
@@ -264,8 +278,8 @@
                     </div>
                 </div>
 
-                <div class="image-container">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur, quasi, reprehenderit earum temporibus velit labore tempore vero ipsam in eveniet eaque assumenda, ullam tenetur odio at blanditiis iusto expedita.</p>
+                <div class="image-container colonyInfo">
+                    <p>North Carolina was a royal colony established by King Charles II in 1663. Later in 1653, the first permenant settlers arrived from Virginia. Originally, North and South Carolina were one colony (Carolina) before being split up into two.</p>
                 </div>
 
             </div>
@@ -285,7 +299,7 @@
                     </div>
                 </div>
 
-                <div class="image-container">
+                <div class="image-container colonyInfo">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur, quasi, reprehenderit earum temporibus velit labore tempore vero ipsam in eveniet eaque assumenda, ullam tenetur odio at blanditiis iusto expedita.</p>
                 </div>
 
@@ -306,8 +320,8 @@
                     </div>
                 </div>
 
-                <div class="image-container">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur, quasi, reprehenderit earum temporibus velit labore tempore vero ipsam in eveniet eaque assumenda, ullam tenetur odio at blanditiis iusto expedita.</p>
+                <div class="image-container colonyInfo">
+                    <p>Maryland was established in 1633 as a refuge for Catholics fleeing persecution. This made the colony unique, as it was one of the first colonies to try to legislate religious toleration. Like many colonies nearby, it developed a tobacco-farming industry and would go on to use slave labor.</p>
                 </div>
 
             </div>
@@ -327,8 +341,8 @@
                     </div>
                 </div>
 
-                <div class="image-container">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur, quasi, reprehenderit earum temporibus velit labore tempore vero ipsam in eveniet eaque assumenda, ullam tenetur odio at blanditiis iusto expedita.</p>
+                <div class="image-container colonyInfo">
+                    <p>Delaware was</p>
                 </div>
 
             </div>
@@ -348,7 +362,7 @@
                     </div>
                 </div>
 
-                <div class="image-container">
+                <div class="image-container colonyInfo">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur, quasi, reprehenderit earum temporibus velit labore tempore vero ipsam in eveniet eaque assumenda, ullam tenetur odio at blanditiis iusto expedita.</p>
                 </div>
 
@@ -369,7 +383,7 @@
                     </div>
                 </div>
 
-                <div class="image-container">
+                <div class="image-container colonyInfo">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur, quasi, reprehenderit earum temporibus velit labore tempore vero ipsam in eveniet eaque assumenda, ullam tenetur odio at blanditiis iusto expedita.</p>
                 </div>
 
@@ -390,7 +404,7 @@
                     </div>
                 </div>
 
-                <div class="image-container">
+                <div class="image-container colonyInfo">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur, quasi, reprehenderit earum temporibus velit labore tempore vero ipsam in eveniet eaque assumenda, ullam tenetur odio at blanditiis iusto expedita.</p>
                 </div>
 
@@ -411,7 +425,7 @@
                     </div>
                 </div>
 
-                <div class="image-container">
+                <div class="image-container colonyInfo">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur, quasi, reprehenderit earum temporibus velit labore tempore vero ipsam in eveniet eaque assumenda, ullam tenetur odio at blanditiis iusto expedita.</p>
                 </div>
 
@@ -432,7 +446,7 @@
                     </div>
                 </div>
 
-                <div class="image-container">
+                <div class="image-container colonyInfo">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur, quasi, reprehenderit earum temporibus velit labore tempore vero ipsam in eveniet eaque assumenda, ullam tenetur odio at blanditiis iusto expedita.</p>
                 </div>
 
@@ -453,7 +467,7 @@
                     </div>
                 </div>
 
-                <div class="image-container">
+                <div class="image-container colonyInfo">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur, quasi, reprehenderit earum temporibus velit labore tempore vero ipsam in eveniet eaque assumenda, ullam tenetur odio at blanditiis iusto expedita.</p>
                 </div>
 
@@ -474,13 +488,20 @@
                     </div>
                 </div>
 
-                <div class="image-container">
+                <div class="image-container colonyInfo">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur, quasi, reprehenderit earum temporibus velit labore tempore vero ipsam in eveniet eaque assumenda, ullam tenetur odio at blanditiis iusto expedita.</p>
                 </div>
 
             </div>
         </div>
     </div>
+
+
+    <footer>
+        <p>Made by Gabriel Finsilver and Noah Nicholson</p>
+        <p>Taught by Timothy Moore</p>
+        <p>Class of 2025, Walled Lake Northern</p>
+    </footer>
 
     <script>
 
