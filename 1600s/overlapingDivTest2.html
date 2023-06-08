@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CSS Overlaying One DIV over Another DIV</title>
+<style> 
+    .container{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        margin: 20px;
+    }
+    .box{
+        /* width: 100px;
+        height: 100px;             */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .stack-top{
+        z-index: 9;
+    }
+    g:hover polygon {
+      fill: orange;
+    }
+
+    polygon {
+      fill: lime;
+      stroke: purple;
+      stroke-width: 1;
+      transition: fill 0.5s;
+      
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/13colonies.jpg" class="box">
+        <svg width="736px" height="779px" class="box stack-top">
+            <g>
+              <polygon points="81,595,84,609,87,615,105,630,114,655,126,674,137,690,147,699,160,713,186,768,215,743,265,708,293,663,257,625,211,612,169,586" />
+            </g>
+          </svg>
+    </div>
+</body>
+</html>

@@ -156,6 +156,10 @@ h1{
     
   }
 
+  .imageLink:hover {
+    background-color: white;
+  }
+
 
 
 
@@ -335,16 +339,16 @@ h1{
     </div>
     </div>
   
-  <div class="color">
-    <div class="image-container">
-      <div class="imagebox">
+    <div class="color">
+      <div class="image-container">
         <a href="coloniesMap.html">
-          <img src="images/usacolonymap.png" alt="land2">
+          <div class="imagebox imageLink">
+            <img src="images/usacolonymap.png" alt="land2">
+            <h1>Click here to see interactive map of the Thirteen Colonies</h1>
+          </div>
         </a>
-      <h1>Map of the Thirteen Colonies</h1>
-    </div>
-      <p>Throughout the 1600s, other English colonies were established along the Atlantic coast. These would become the 'Thirteen Colonies,' including New Hampshire, Massachusetts Bay, Rhode Island, Connecticut, New York, New Jersey, Pennsylvania, Delaware, Maryland, Virginia, North Carolina, South Carolina, and Georgia. Each had its unique characteristics and development. Some were founded for religious freedom, others for business ventures, and still others as penal colonies.</p>
-    </div>
+        <p>Throughout the 1600s, other English colonies were established along the Atlantic coast. These would become the 'Thirteen Colonies,' including New Hampshire, Massachusetts Bay, Rhode Island, Connecticut, New York, New Jersey, Pennsylvania, Delaware, Maryland, Virginia, North Carolina, South Carolina, and Georgia. Each had its unique characteristics and development. Some were founded for religious freedom, others for business ventures, and still others as penal colonies.</p>
+      </div>
     </div>
   
       <div class="color">
@@ -380,9 +384,9 @@ h1{
               flex-wrap: wrap;
               justify-content: center;
               gap: 30px;
-              margin: 10px;
-  
+              margin: 25px;
           }
+
           .colony {
               border: 1px solid black;
               margin-bottom: 4px;
@@ -392,34 +396,38 @@ h1{
               border-radius: 10px;
               max-width: 500px;
               flex-basis: 20px;
-              color: black
-              
+              color: black 
           }
+
           .colony img {
               max-width: 400px;
               display: block; /* Makes the image a block element */
               margin-left: auto; /* Automatic left margin */
               margin-right: auto; /* Automatic right margin */
           }
+
           .colony:hover {
               background-color: #ffffff;
           }
+
           .colony h2{
               text-align: center;
               font-size: 28px;
               margin:5px;
               white-space: nowrap;
-  
           }
+
           .colony p{
             font-size: 18px;
           }
+
           .imageTextContainer{
               background-color: rgba(255, 255, 255, 0.096);
               box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
               border-radius: 10px;
               padding:5px;
           }
+
           .colorColo{
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
             border-radius: 10px;
