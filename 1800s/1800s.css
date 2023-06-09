@@ -81,6 +81,27 @@
     overflow: hidden;
     
   }
+  .gildedAge {
+    background-image: url('images/The_Bosses_of_the_Senate_by_Joseph_Keppler.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    padding: 250px; 
+    overflow: hidden;
+    
+  }
+  .gildtitle{
+    color: rgb(124, 105, 11) !important;
+    margin-left: -300px !important;
+    
+  }
+  .gilddate{
+    margin-left: -240px !important;
+    font-size: 40px;
+    color:black;
+    margin-top: -10px;;
+  }
   .spanImg {
     background-image: url('images/glac.jpg');
     background-repeat: no-repeat;
