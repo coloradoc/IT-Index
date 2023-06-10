@@ -62,7 +62,7 @@
   
   
   .gettyAd {
-    background-image: url('images/The_levee\,_New_Orleans\,_poster_by_Currier_&_Ives\,_1884.jpg');
+    background-image: url('images/flag.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -71,8 +71,8 @@
     overflow: hidden;
     
   }
-  .gettyAdReal {
-    background-image: url('images/gettyad.jpg');
+  .worldWar1 {
+    background-image: url('images/Wake_Up_America_parade.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -81,23 +81,14 @@
     overflow: hidden;
     
   }
-  .gildedAge {
-    background-image: url('images/The_Bosses_of_the_Senate_by_Joseph_Keppler.jpg') !important;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    position: relative;
-    padding: 250px; 
-    overflow: hidden;
-    
-  }
-  .gildtitle{
-    color: rgb(124, 105, 11) !important;
+  .w1title{
+    color: rgb(255, 0, 0) !important;
     margin-left: -300px !important;
     
   }
-  .gilddate{
+  .w1date{
     margin-left: -240px !important;
+    color: rgb(226, 27, 27) !important; 
     font-size: 40px;
     color:black;
     margin-top: -10px;;
@@ -118,7 +109,7 @@
     position: absolute;
     top: 0px;
 
-    left: clamp(20px, 35%, 700px);
+    left: clamp(20px, 35%, 500px);
     color: #c8bfab;
 
   }
@@ -126,18 +117,35 @@
   
   .title {
     color: rgb(0, 0, 0);
-    font-size: 100px;
+    font-size: clamp(60px, 4.5vw, 150px);
     white-space: nowrap;
     font-family: Palatino, serif;
     margin-right:30px;
   }
+  @media only screen and (max-width: 1000px) {
+    .title {
+      color: rgb(0, 0, 0);
+      font-size: 82px !important;
+      white-space: nowrap;
+      font-family: Palatino, serif;
+      margin-right:30px;
+    }
+    .text-container {
+      position: absolute;
+      top: 0px;
+  
+      left: clamp(20px, 35%, 100px);
+      color: #c8bfab;
+  
+    }
+}
   
   .dawn {
     color: rgb(0, 0, 0);
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 20px;
-    font-size: 50px;
+    font-size: 40px;
   }
   
   .authorText {
@@ -228,4 +236,9 @@
     padding: 20px;
     font-size: 26px;
     color: #ffffff;
+  }
+
+  .awesomeVideo{
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
