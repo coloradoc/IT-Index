@@ -5,7 +5,7 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #bb9f86;
+    background-color: #967454;
     color: #ffffff;
     margin: 0;
     padding: 0;
@@ -145,7 +145,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-image: linear-gradient(to bottom, rgba(135, 128, 177, 0), rgb(210, 210, 190));
+    background-image: linear-gradient(to bottom, rgba(135, 128, 177, 0),rgb(190, 151, 114));
     padding: 20px;
     font-size: 26px;
     color: #ffffff;

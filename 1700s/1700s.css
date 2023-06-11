@@ -60,6 +60,10 @@ h1 {
   display: none;
 }
 
+.imageLink:hover {
+  background-color: white;
+}
+
 
 
 .headerImage {
