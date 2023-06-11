@@ -68,7 +68,7 @@
     position: relative;
     padding: 250px; 
     overflow: hidden;
-    
+    transition: background-image 1s ease-in-out;
   }
   
   .text-container {
@@ -77,16 +77,17 @@
     left: 500px;
     left: clamp(50px, 30%, 100px);
     color: #ffffff;
+    transition: color 1s ease-in-out;
   }
   
   .title {
-
+    transition: color 1s ease-in-out;
     font-size: 130px;
     font-family: Palatino, serif;
   }
   
   .date {
-
+    transition: color 1s ease-in-out;
     font-size: clamp(20px, 2vw, 60px);
     top: 5px;
     margin-top: 4%;

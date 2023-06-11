@@ -23,21 +23,30 @@
 
 
 <script type="text/javascript">
-  var totalCount = 5;
+
+  const totalCount = 5;
+  var previousChoice = 0;
+
   function ChangeIt() {
+
     var num = Math.ceil(Math.random() * totalCount);
+
+    while (num == previousChoice){
+      num = Math.ceil(Math.random() * totalCount);
+    }
     var randomBackgroundElement = document.getElementById("randomBackground");
     randomBackgroundElement.style.backgroundImage = "url('images/americanPainting" + num + ".jpg')";
     
     var randomFont = document.getElementById("americaTitle");
     var randomFont2 = document.getElementById("americaDate");
     if (num === 5 || num === 1) {
-      randomFont.style.color = "black"; // Change font color to red
+      randomFont.style.color = "black"; // Change font color to black
       randomFont2.style.color = "black";
     } else {
-      randomFont.style.color = "white"; // Change font color to default
+      randomFont.style.color = "white"; // Change font color to white
       randomFont2.style.color = "white";
     }
+    previousChoice = num;
   }
 </script>
 
@@ -51,99 +60,95 @@
 
 <script type="text/javascript"> 
   ChangeIt();
+  
+  setInterval(ChangeIt, 8000);
 </script>
 
 
   <body>
     <style>
-.cards {
-  display: flex;
-  justify-content: center;
-}
+      .cards {
+        display: flex;
+        justify-content: center;
+      }
 
-.card {
-  flex-direction: row;
-  max-width: 300px;
-  background-color: #e4e4e4;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 0 10px;
-  padding: 20px;
-}
-
-
-
-
-
-
+      .card {
+        flex-direction: row;
+        max-width: 300px;
+        background-color: #e4e4e4;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 0 10px;
+        padding: 20px;
+      }
+ 
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .card-text {
+        margin-top: 20px;
+        text-align: center;
+        color: #000000;
+      }
+      
+      .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+      
+      .card h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+      
+      .card p {
+        font-size: 22px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      
+      .card a.ps-btn-secondary {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #0070ba;
+        color: #000000b0;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+      
+      .centerText{
+          text-align: center; 
+          color: black; 
+          font-family:"Corbel Light", sans-serif; font-style: normal; 
+          font-weight: normal; 
+          text-decoration: none; 
+          font-size: 40pt; 
+          margin:5px;
+      }
+      .hover-line{
+          margin: 0px;
+      }
+      .white-bar {
+          width: 30%;
+          height: 4px;
+          background-color: #ffffff;
+          position: center;
+          top: 93%;
+          left: 0;
+          transform: translateY(-50%);
+          margin: 0 auto;
+      }
+      a{
+        color: rgb(0,0,0,0);
+      }
         
-        .card-content {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        
-        .card-text {
-          margin-top: 20px;
-          text-align: center;
-          color: #000000;
-        }
-        
-        .card img {
-          width: 100%;
-          height: auto;
-          border-radius: 8px;
-          margin-bottom: 10px;
-        }
-        
-        .card h3 {
-          font-size: 30px;
-          margin-bottom: 10px;
-        }
-        
-        .card p {
-          font-size: 22px;
-          color: #333;
-          margin-bottom: 10px;
-        }
-        
-        .card a.ps-btn-secondary {
-          display: inline-block;
-          padding: 10px 20px;
-          background-color: #0070ba;
-          color: #000000b0;
-          text-decoration: none;
-          border-radius: 4px;
-        }
-        
-        .centerText{
-            text-align: center; 
-            color: black; 
-            font-family:"Corbel Light", sans-serif; font-style: normal; 
-            font-weight: normal; 
-            text-decoration: none; 
-            font-size: 40pt; 
-            margin:5px;
-        }
-        .hover-line{
-            margin: 0px;
-        }
-        .white-bar {
-            width: 30%;
-            height: 4px;
-            background-color: #ffffff;
-            position: center;
-            top: 93%;
-            left: 0;
-            transform: translateY(-50%);
-            margin: 0 auto;
-        }
-        a{
-          color: rgb(0,0,0,0);
-        }
-        
-        </style>
-        </head>
+    </style>
+  </head>
         
         <div class="white-bar"></div>
         <div class="centerText">
