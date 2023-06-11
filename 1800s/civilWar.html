@@ -217,6 +217,267 @@
       </video>
   </div>
 
+
+
+  <style>
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        outline: none;
+      }
+      
+      
+      .spinDaWheel{
+        font-family: Open Sans;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 60vh;
+        overflow: hidden;
+        background: #c4a78d;
+        background-size: cover;
+      }
+      
+      .mainbox{
+        position: relative;
+        width: 500px;
+        height: 500px;
+      }
+      .mainbox:after{
+        position: absolute;
+        content: '';
+        width: 32px;
+        height: 32px;
+        background: url('images/download\ \(15\).png') no-repeat;
+        background-size: 32px;
+        right: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .box{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 50%;
+        border: 10px solid #fff;
+        overflow: hidden;
+        transition: all ease 5s;
+      }
+      span{
+        width: 50%;
+        height: 50%;
+        display: inline-block;
+        position: absolute;
+      }
+      .span1{
+        clip-path: polygon(0 92%, 100% 50%, 0 8%);
+        background-color: #920000;
+        top: 120px;
+        left: 0;
+      }
+      .span1Cool{
+        clip-path: polygon(0 92%, 100% 50%, 0 8%);
+        background-color: #22ff00;
+        top: 120px;
+        left: 0;
+      }
+      .span2{
+        clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+        background-color: #22ff00;
+        top: 120px;
+        right: 0;
+      }
+      .span3{
+        clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
+        background-color: #22ff00;
+        bottom: 0;
+        left: 120px;
+      }
+      .span4{
+        clip-path: polygon(50% 100%, 92% 0, 8% 0);
+        background-color: #22ff00;
+        top: 0;
+        left: 120px;
+      }
+      .span4Cool{
+        clip-path: polygon(50% 100%, 92% 0, 8% 0);
+        background-color: #920000;
+        top: 0;
+        left: 120px;
+      }
+      
+      
+      .box1 .span3 b{
+         transform: translate(-50%, -50%) rotate(-270deg);
+      }
+      .box1 .span1 b,
+      .box2 .span1 b{
+        transform: translate(-50%, -50%) rotate(185deg);
+      }
+      .box2 .span3 b{
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+      .box1 .span4 b,
+      .box2 .span4 b{
+        transform: translate(-50%, -50%) rotate(-85deg);
+      }
+      
+      .box2{
+        width: 100%;
+        height: 100%;
+        transform: rotate(-135deg);
+      }
+      span b{
+        font-size: 24px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      
+      }
+      
+      .spin{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        border: 4px solid #fff;
+        background-color: #777777;
+        color: #fff;
+        box-shadow: 0 5px 20px #000;
+        font-weight: bold;
+        font-size: 22px;
+        cursor: pointer;
+      }
+      .spin:active{
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+      }
+      
+      .mainbox.animate:after{
+        animation: animateArrow 0.7s ease infinite;
+      }
+      @keyframes animateArrow{
+        50%{
+          right: -40px;
+        }
+      }
+      .wheelText{
+        text-align: center;
+        color: black !important;
+        background-color: #d8b99d;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+        padding: 10px;
+      }
+      .wheelText h1{
+
+        color: black !important;
+
+      }
+      
+</style>
+
+<script>
+function myfunction(){
+    var x = 1024; //min value
+    var y = 9999; // max value
+
+    var deg = Math.floor(Math.random() * (x - y)) + y;
+
+    document.getElementById('box').style.transform = "rotate("+deg+"deg)";
+
+    var element = document.getElementById('mainbox');
+    element.classList.remove('animate');
+    setTimeout(function(){
+        element.classList.add('animate');
+
+        var deathText = document.getElementById('deathText');
+        var lifeText = document.getElementById('lifeText');
+
+        // Reset text visibility
+        deathText.style.display = 'none';
+        lifeText.style.display = 'none';
+
+        // Calculate which quadrant we are in
+        var remainder = deg % 360;
+        if ((remainder > 180 && remainder < 260)) {
+            deathText.style.display = 'block'; // Show death text
+        } else {
+            lifeText.style.display = 'block'; // Show life text
+        }
+    }, 5000); //5000 = 5 second
+}
+</script>
+
+
+<div class="wheelText">
+  
+<h1>Would You Survive The Civil War?</h1>
+<p>The chances of survivng the civil war was about one in four. Over 600,000 died in the Civil War.</p>
+</div>
+  <div class="spinDaWheel">
+	<div id="mainbox" class="mainbox">
+		<div id="box" class="box">
+			<div class="box1">
+				<span class="span1"><b>Killed in battle</b></span>
+				<span class="span2"><b>Life</b></span>
+				<span class="span3"><b></b></span>
+				<span class="span4"><b></b></span>
+			</div>
+			<div class="box2">
+				<span class="span1Cool"><b></b></span>
+				<span class="span2"><b></b></span>
+				<span class="span3"><b></b></span>
+				<span class="span4Cool"><b>Disease</b></span>
+			</div>
+		</div>
+
+		<button class="spin" onclick="myfunction()">SPIN</button>
+	</div>
+
+</div>
+
+
+
+    <div id="deathText" style="display:none;">
+      <div class = "info" style="background-color: #920000;">
+        <h3>You Died!</h3>
+    
+        <div class = "textInsideInfo">
+            <p>Your spin landed on 'Death'. In the brutal realities of the Civil War, many were not so fortunate and lost their lives due to combat or disease. </p>
+    
+        </div>
+    
+      </div>
+    
+    </div>
+
+    <div id="lifeText" style="display:none;">
+      <div class = "info" style="background-color: #009200; ">
+        <h3>You Lived!</h3>
+    
+        <div class = "textInsideInfo">
+            <p>Congratulations! Your spin landed on 'Life'. Despite the harsh conditions of the Civil War, you managed to survive. You could have been a resilient soldier who braved the battles or a civilian who navigated through these tough times.</p>
+        </div>
+    
+      </div>
+    
+    </div>
+ 
+
+  <script src="script.js"></script>
+
+
+
+
+
+
+
 </body>
 
 <footer>
