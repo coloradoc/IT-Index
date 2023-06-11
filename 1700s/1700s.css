@@ -169,27 +169,23 @@ footer {
 }
 
 .awesomeVideo{
-  padding-top: 30px;
-  padding-bottom: 30px;
+  display: flex;
   justify-content: center;
   align-items: center;
+  padding: 30px;
+  margin:30px;
+}
+.awesomeVideo video {
+  width: 80%; 
+  height: auto; 
+  object-fit: cover; 
 }
 
-.awesomeVideo h1{
-  font-size: 70px;
+.stupidText h1{
+  font-size: 60px;
 }
 
 /* I can't get this video to properly center for the life of me help - Noah */
-.awesomeVideo video{
-  /* margin-left: 20%;  */
-  margin-bottom: 20px;
-  /* transform: translate(-50%, 0%); */
-  height: 500px; 
-  max-width: 80%;
-  width: auto;
-  object-fit: cover;
-  border-radius: 15px;
-}
 
 
 
