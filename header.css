@@ -41,7 +41,7 @@
     text-decoration: none;
     display: block;
     text-align: center;
-    position: relative; /* Added */
+    position: relative; /* Addeda */
     z-index: 1; /* Added */
     line-height: 30px; /* Adjusted to lower the text */
   }
