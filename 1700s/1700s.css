@@ -5,7 +5,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #c8bfab;
+  background-color: #759e7f;
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -114,7 +114,7 @@ h1 {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-image: linear-gradient(to bottom, rgba(135, 128, 177, 0), rgb(210, 210, 190));
+  background-image: linear-gradient(to bottom, rgba(135, 128, 177, 0), rgb(116, 165, 114));
   padding: 20px;
   font-size: 26px;
   color: #ffffff;
@@ -173,20 +173,22 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
-  margin:30px;
+  padding: 20px;
+  margin: 30px;
+  
 }
 .awesomeVideo video {
-  width: 80%; 
+  width: 70%; 
+  margin-top: -20px;
   height: auto; 
   object-fit: cover; 
+  border-radius: 20px;
 }
 
 .stupidText h1{
   font-size: 60px;
 }
 
-/* I can't get this video to properly center for the life of me help - Noah */
-
-
-
+.imageLink:hover {
+  background-color: white;
+}
