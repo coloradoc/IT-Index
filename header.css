@@ -11,12 +11,12 @@
   .topnav {
     overflow: hidden;
     padding: 1px;
-    background-image: linear-gradient(to right, #b2b2b2, #c4c4c4);
+    background-image: linear-gradient(to right, #000000, #000000);
   }
 
   .topnav a {
     float: left;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 5px 30px;
     text-decoration: none;
@@ -36,7 +36,7 @@
   }
 
   .hover a {
-    color: #000000;
+    color: rgb(226, 226, 226);
     padding: 6px 30px;
     text-decoration: none;
     display: block;
@@ -47,7 +47,7 @@
   }
 
   .hover a:hover {
-    background-color: #ddd;
+    background-color: #dddcdc;
     color: black;
     padding-top: 22px; /* Increased padding */
     padding-bottom: 2px; /* Added */

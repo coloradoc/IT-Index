@@ -5,7 +5,7 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #c0c0c0;
+    background-color: #000000;
     color: #ffffff;
     margin: 0;
     padding: 0;
@@ -82,7 +82,7 @@
   
   .title {
     transition: color 1s ease-in-out;
-    font-size: 130px;
+    font-size: 100px;
     font-family: Palatino, serif;
   }
   
@@ -104,38 +104,9 @@
     color: #ffffff;
   }
 
-  .info {
-    background-color: #d8d8d8;
-    margin: 0 auto; /* Centers the info box horizontally */
-    margin-top: 10px;
-    text-align: center; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-    max-width: 1600px; 
-    padding: 10px;
-    color: rgb(0, 0, 0);
-    font-family: 'Dancing Script', cursive;
-  }
-
-  .textInsideInfo {
-    font-size: 28px;
-    font-family: Arial, sans-serif;
-
-    color: rgb(0, 0, 0);
-    margin: 20px;
-    padding: 3px;
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-    border-radius: 20px;
-  }
-
-  .info h3 {
-    font-size: 70px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
  /* Footer section */
  footer {
-	background-color: #818181;;
+	background-color: #333333;;
 	color: #fff;
 	padding: 30px;
 	align-items: center;
@@ -159,4 +130,123 @@
       padding: 20px; /* Padding for spacing */
       max-width: 600px; /* Adjust as needed */
       margin: 0 auto; /* Center the container */
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      flex-direction: row;
+      max-width: 300px;
+      background-color: #e4e4e4;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 0 10px;
+      padding: 20px;
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .card-text {
+      margin-top: 20px;
+      text-align: center;
+      color: #000000;
+    }
+    
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    
+    .card h3 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    
+    .card p {
+      font-size: 22px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    
+    .card a.ps-btn-secondary {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0070ba;
+      color: #ffffffb0;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    
+    .centerText{
+        text-align: center; 
+        color: rgb(255, 255, 255); 
+        font-family:"Corbel Light", sans-serif; font-style: normal; 
+        font-weight: normal; 
+        text-decoration: none; 
+        font-size: 40pt; 
+        margin:5px;
+    }
+    .hover-line{
+        margin: 0px;
+    }
+    .white-bar {
+        width: 30%;
+        height: 4px;
+        background-color: #ffffff;
+        position: center;
+        top: 93%;
+        left: 0;
+        transform: translateY(-50%);
+        margin: 0 auto;
+    }
+    a{
+      color: rgb(0,0,0,0);
+    }
+    .info img{
+      width: auto;
+      height: auto;
+    }
+    .info {
+      background-color: #000000;
+      margin: 0 auto; /* Centers the info box horizontally */
+      margin-top: 10px;
+      text-align: center; 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      max-width: 1600px; 
+      padding: 10px;
+      width: 1200px;
+      height: 400px;
+      display: flex;
+      border-color: white;
+      border-style: solid; 
+      border-radius: 5px;
+    }
+  
+    .textInsideInfo {
+      font-size: 28px;
+      font-family: Arial, sans-serif;
+  
+      color: rgb(255, 255, 255);
+      margin: 20px;
+      padding: 3px;
+      background-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+      border-radius: 20px;
+    }
+  
+    .info h3 {
+      font-size: 38px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-family: "Corbel Light", sans-serif; font-style: normal;
+      color:#ffffff;
+      padding-left: 20px;
     }
