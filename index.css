@@ -212,18 +212,18 @@
     }
     .info img{
       width: auto;
-      height: auto;
+      height: 400px;
     }
     .info {
       background-color: #000000;
       margin: 0 auto; /* Centers the info box horizontally */
-      margin-top: 10px;
+      margin-top: 30px;
       text-align: center; 
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
       max-width: 1600px; 
       padding: 10px;
       width: 1200px;
-      height: 400px;
+      height: auto;
       display: flex;
       border-color: white;
       border-style: solid; 
@@ -240,6 +240,7 @@
       background-color: rgba(255, 255, 255, 0.2);
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
       border-radius: 20px;
+
     }
   
     .info h3 {
@@ -249,4 +250,42 @@
       font-family: "Corbel Light", sans-serif; font-style: normal;
       color:#ffffff;
       padding-left: 20px;
+      padding-right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
     }
+  
+        
+  .textList {
+      font-family: Arial, sans-serif;
+      font-size: 40px;
+      color: #ffffff;
+      margin: 0 auto; /* Centers the info box horizontally */
+      text-align: center; 
+      
+  }
+  
+  .textList ul {
+      list-style-type: none;
+      padding: 0;
+  }
+  
+  .textList ul li {
+      margin-bottom: 10px;
+      font-weight: bold;    
+      padding-top: 20px;  
+  }
+  
+  .listIndex img{
+    width: 2em;
+    margin-right: .7em;
+    height: auto;
+    border-radius: 8px; 
+    }
+  .listIndex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
