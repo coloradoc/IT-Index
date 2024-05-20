@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../../header.css">
+  <script src="./js/javascript.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"></head>
+  <title>Skyward</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+</head><body><div class="topnav">
+  <a href="../../index.html"><img src="../images/WLCSD-Logo.png" height="40px" width="40px" alt="US Flag" title="Home"></a> 
+  <div class="hover"> 
+    <a href="../../index.html">Home</a>
+    <a href="../students.html">Students</a>
+    <a href="../../teachers/teachers.html">Teachers</a>
+    <a href="../../interns/interns.html">Interns</a>
+  </div>
+</div>
+
+
+<link rel="stylesheet" href="../index.css">
+
+</head>
+
+  <body>
+    
+    <div class="white-bar"></div>
+    <div class="centerText">
+        <h2 class="hover-line">Skyward</h2>
+    </div>
+    <div class="info">
+      <img src="../images/skyward.jpg" alt="">
+        <h3>Skyward helps schools with student management, human resources, and financial management. Classlink helps students with checking grades, classes, teachers, lunch money, and other student information.</h3>
+    </div>
+    <div class="infoSection">
+      <div class = "interactive-element">
+        <div class="infoHeader">
+          <h1>How To Log Onto Skyward</h1>
+        </div>
+     </div>
+     <div class="helpInfo hidden">
+      <a href="https://skyweb.wlcsd.org/scripts/wsisa.dll/WService=wsEAplus/seplog01.w" target="_blank">Skyward Login Page</a>
+        <div class="infoHelp">
+          <h3>To log onto Skyward, enter your Skyward login ID and password and press sign in. Your username should be your lunch number / school ID. From there you can accsess the gradebook to see your current grades. Make sure that "Show Current Grades Only" is selected in "Display Options" to see your current grades.</h3>
+          <img src="../images/skywardpage.PNG">
+        </div>
+      </div>
+    </div>
+    
+    <div class="infoSection">
+      <div class = "interactive-element">
+        <div class="infoHeader">
+          <h1>Forgot Your Password</h1>
+        </div>
+     </div>
+     <div class="helpInfo hidden">
+      <div class="infoHelp">
+        <h3>To reset your password, click "Forgot your Login/Password?".</h3>
+        <img src="../images/forgot.PNG">
+      </div>
+      <div class="infoHelp">
+        <h3>Enter your Skyward username or the email associated with the account. An email will be sent out to the email associated to the Skyward account. It should take around 2 minutes to send.</h3>
+        <img src="../images/password.PNG">
+      </div>
+      <div class="infoHelp">
+        <h3>Go to your email. There should be an email from do.not.reply@wlcsd.org called "Forgotten Login/Password Assistance." Click on the link it gives you to reset the account password.</h3>
+        <img src="../images/link.png">
+      </div>
+      <div class="info">
+        <img src="../images/skyward.jpg" alt="">
+          <h3>If a parent account is resetting a student account, you will get emails for each student assocaited with your account along with an email to reset your own password. If you only want to reset one students account, just use the link on email that has the student's name. </h3>
+      </div>
+      <div class="infoHelp">
+        <h3>Enter a new password for your account, and you can now log back into your account with the new password.</h3>
+        <img src="../images/logininfo.PNG">
+      </div>
+      <div class="infoHelp">
+        <h3>If you don't know your school ID please talk to someone in your schools IT department or the front desk.</h3>
+        <img src="../images/idk.png">
+      </div>
+    </div>
+  </div>
+
+
+ 
+    </body>
+
+<br>
+<footer>
+    <p>Made by Gabriel Finsilver</p>
+    <p>Walled Lake Northern</p>
+  </footer>
+
+  <script>
+    // Add click event listeners to interactive elements
+    const interactiveElements = document.querySelectorAll('.interactive-element');
+    
+    interactiveElements.forEach(element => {
+      element.addEventListener('click', () => {
+        const hiddenContent = element.nextElementSibling;
+        hiddenContent.classList.toggle('hidden');
+      });
+    });
+    
+  </script>
+
+
+  </html>

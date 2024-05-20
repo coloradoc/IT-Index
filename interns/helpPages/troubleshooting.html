@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../../header.css">
+  <script src="./js/javascript.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"></head>
+  <title>Troubleshooting</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+</head><body><div class="topnav">
+  <a href="../../index.html"><img src="../images/WLCSD-Logo.png" height="40px" width="40px" alt="US Flag" title="Home"></a> 
+  <div class="hover"> 
+    <a href="../../index.html">Home</a>
+    <a href="../../students/students.html">Students</a>
+    <a href="../../teachers/teachers.html">Teachers</a>
+    <a href="../interns.html">Interns</a>
+  </div>
+</div>
+
+
+<link rel="stylesheet" href="../index.css">
+
+</head>
+
+  <body>
+    
+    <div class="white-bar"></div>
+    <div class="centerText">
+        <h2 class="hover-line">Troubleshooting</h2>
+    </div>
+    <div class="info">
+      <img src="../images/ident.png" alt="">
+        <h3>Being able to properly identify problems is the most important skill as an IT intern. You don't want to be spending hours looking at documentation when all you had to do is plug something in. Make sure whenever you are troubleshooting something, you identify the problem first.</h3>
+    </div>
+    <div class="infoSection">
+      <div class = "interactive-element">
+        <div class="infoHeader">
+          <h1>How To Fix Chromebooks</h1>
+        </div>
+     </div>
+     <div class="helpInfo hidden">
+        <div class="infoHelp">
+          <h3>Re-enrolling Chromebooks fixes almost any software issue. If you ever experience something wrong with a Chromebook—such as the wrong language setting, continuous talking, or a black screen when turned on—re-enrolling will most likely fix it.</h3>
+          <a href="../../students/helpPages/chromebook.html">How to re-enroll a Chromebook</a>
+          <br>
+        </div>
+          <div class="infoHelp">
+            <h3>If a students Chromebook has physical damage, make sure the IT department is aware and email your manager. If your school supports it, make sure the student submits a help ticket. Turn the Chromebook into the front office so the secretaries can send the Chromeobok into the ESC for repairs.</h3>
+            <img src="../images/damage.jpg">
+          </div>
+      </div>
+  </div>
+</div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+ 
+    </body>
+
+<br>
+<footer>
+    <p>Made by Gabriel Finsilver</p>
+    <p>Walled Lake Northern</p>
+  </footer>
+
+  <script>
+    // Add click event listeners to interactive elements
+    const interactiveElements = document.querySelectorAll('.interactive-element');
+    
+    interactiveElements.forEach(element => {
+      element.addEventListener('click', () => {
+        const hiddenContent = element.nextElementSibling;
+        hiddenContent.classList.toggle('hidden');
+      });
+    });
+    
+  </script>
+
+
+  </html>

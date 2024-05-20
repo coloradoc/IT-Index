@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../../header.css">
+  <script src="./js/javascript.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"></head>
+  <title>Outlook</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+</head><body><div class="topnav">
+  <a href="../../index.html"><img src="../images/WLCSD-Logo.png" height="40px" width="40px" alt="US Flag" title="Home"></a> 
+  <div class="hover"> 
+    <a href="../../index.html">Home</a>
+    <a href="../../students/students.html">Students</a>
+    <a href="../teachers.html">Teachers</a>
+    <a href="../../interns/interns.html">Interns</a>
+  </div>
+</div>
+
+
+<link rel="stylesheet" href="../index.css">
+
+</head>
+
+  <body>
+    
+    <div class="white-bar"></div>
+    <div class="centerText">
+        <h2 class="hover-line">Outlook</h2>
+    </div>
+    <div class="info">
+      <img src="../images/outlook.png" alt="">
+        <h3>Microsoft Outlook is a personal information manager that is used by WLCSD to access teachers emails.</h3>
+    </div>
+    <div class="infoSection">
+      <div class = "interactive-element">
+        <div class="infoHeader">
+          <h1>How To Log Onto Outlook</h1>
+        </div>
+     </div>
+     <div class="helpInfo hidden">
+      <a href="https://www.microsoft.com/en-us/microsoft-365/outlook/log-in" target="_blank">Outlook Login Page</a>
+        <div class="infoHelp">
+          <h3>To log onto Outlook, enter your teacher email. It is formated as: FIRSTNAME+LASTNAME@teachers.wlcsd.org, then enter your password. Your Outlook login information should be similar as the login information used to get into the actual laptop.</h3>
+          <img src="../images/outlooklogin.PNG">
+        </div>
+        <div class="infoHelp">
+          <h3>You will need an authenticator code in order to log in. Set up the Microsoft Authenticator app on your phone with your teacher email.</h3>
+          <img src="../images/auth.png">
+        </div>
+      </div>
+    </div>
+    
+    <div class="infoSection">
+      <div class = "interactive-element">
+        <div class="infoHeader">
+          <h1>Forgot Your Password</h1>
+        </div>
+     </div>
+     <div class="helpInfo hidden">
+      <div class="infoHelp">
+        <h3>To reset your Outlook password, contact someone in the IT department.</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="infoSection">
+    <div class = "interactive-element">
+      <div class="infoHeader">
+        <h1>Lost Access To Old Authenticator</h1>
+      </div>
+   </div>
+   <div class="helpInfo hidden">
+    <div class="infoHelp">
+      <h3>If you lost access to your authenticator and are unable to access Outlook at all, please contact someone in the IT department.</h3>
+      <img src="../images/auth.jpg">
+    </div>
+    <div class="infoHelp">
+      <h3>If switch phones and want to log into Outlook on the new phone, you will need your old authenticator code in order to set up the authenticator on your new phone. This means that if you have lost access to your old phone, and thus authenticator, you will not be able to log in again because you lost your access to your authenticator codes.</h3>
+    </div>
+    <div class="infoHelp">
+      <h3>Here is a tutorial on how to remove the old authenticator. The process can be complicated. By going to your microsoft security settings you might be able to give yourself a onetime access code you can use to log into your mobile device.</h3>
+      <iframe width="1000" height="500" src="https://www.youtube.com/embed/wdLTJyjkFVg" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+ 
+    </body>
+
+<br>
+<footer>
+    <p>Made by Gabriel Finsilver</p>
+    <p>Walled Lake Northern</p>
+  </footer>
+
+  <script>
+    // Add click event listeners to interactive elements
+    const interactiveElements = document.querySelectorAll('.interactive-element');
+    
+    interactiveElements.forEach(element => {
+      element.addEventListener('click', () => {
+        const hiddenContent = element.nextElementSibling;
+        hiddenContent.classList.toggle('hidden');
+      });
+    });
+    
+  </script>
+
+
+  </html>

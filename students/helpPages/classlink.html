@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../../header.css">
+  <script src="./js/javascript.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"></head>
+  <title>Classlink</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+</head><body><div class="topnav">
+  <a href="../../index.html"><img src="../images/WLCSD-Logo.png" height="40px" width="40px" alt="US Flag" title="Home"></a> 
+  <div class="hover"> 
+    <a href="../../index.html">Home</a>
+    <a href="../students.html">Students</a>
+    <a href="../../teachers/teachers.html">Teachers</a>
+    <a href="../../interns/interns.html">Interns</a>
+  </div>
+</div>
+
+
+<link rel="stylesheet" href="../index.css">
+
+</head>
+
+  <body>
+    
+    <div class="white-bar"></div>
+    <div class="centerText">
+        <h2 class="hover-line">Classlink</h2>
+    </div>
+    <div class="info">
+      <img src="../images/class.png" alt="">
+        <h3>Classlink is a portal for students to access apps and accounts from one place easily. Students also use Classlink to log onto their Chromebooks. </h3>
+    </div>
+    <div class="infoSection">
+      <div class = "interactive-element">
+        <div class="infoHeader">
+          <h1>How To Log Onto Classlink</h1>
+        </div>
+     </div>
+     <div class="helpInfo hidden">
+      <a href="https://launchpad.classlink.com/wlcsd" target="_blank">Classlink Login Page</a>
+        <div class="infoHelp">
+          <h3>To log onto Classlink, enter your Classlink username and password and press sign in. Your username should be formated as: "first name initial" + "last name inital" + "student ID". Example: AA1234567. Your password initially will be automatically set by the school, and you will be required to change it to something new. Your password can not have your name in it.</h3>
+          <img src="../images/classlink.PNG">
+        </div>
+        <div class="infoHelp">
+          <h3>This is what Classlink should look like when you log in.</h3>
+          <img src="../images/classlinkin.PNG">
+        </div>
+      </div>
+    </div>
+    
+    <div class="infoSection">
+      <div class = "interactive-element">
+        <div class="infoHeader">
+          <h1>Forgot Your Password</h1>
+        </div>
+     </div>
+     <div class="helpInfo hidden">
+      <div class="infoHelp">
+        <h3>To reset your password, click "Help, I forgot my password".</h3>
+        <img src="../images/classlink - Copy (2).PNG">
+      </div>
+      <div class="infoHelp">
+        <h3>Enter your Classlink username.</h3>
+        <img src="../images/reset password.PNG">
+      </div>
+      <div class="infoHelp">
+        <h3>Answer the recovery question you have set up.</h3>
+        <img src="../images/question.PNG">
+      </div>
+      <div class="infoHelp">
+        <h3>Enter a new password for your account, and you can now log back into your account with the new password. Your password can not have your name in it.</h3>
+        <img src="../images/newpass.PNG">
+      </div>
+      <div class="infoHelp">
+        <h3>If you forgot your recovery question, try closing out of the page and going back in to get a different question. If you forgot all your questions, please talk to someone in your schools IT department or the front desk.</h3>
+        <img src="../images/idk.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="infoSection">
+    <div class = "interactive-element">
+      <div class="infoHeader">
+        <h1>Changing App Passwords</h1>
+      </div>
+   </div>
+   <div class="helpInfo hidden">
+    <div class="infoHelp">
+      <h3>After you log in, click your profile at the top right of the screen</h3>
+      <img src="../images/login.PNG">
+    </div>
+    <div class="infoHelp">
+      <h3>Click the settings button.</h3>
+      <img src="../images/setting.png">
+    </div>
+    <div class="infoHelp">
+      <h3>Go to "App Passwords" and click on the pencil icon of the app you want to change the password of.</h3>
+      <img src="../images/which one.PNG">
+    </div>
+    <div class="infoHelp">
+      <h3>Click on the pencil icon of the password account you want to change. It will probably say "Default," choose that one.</h3>
+      <img src="../images/penicl2.PNG">
+    </div>
+    <div class="infoHelp">
+      <h3>From here you can change the password of the account or username information. To save your changes, press the "Save" button.
+      </h3>
+      <img src="../images/what to do.PNG">
+    </div>
+  </div>
+</div>
+ 
+    </body>
+
+<br>
+<footer>
+    <p>Made by Gabriel Finsilver</p>
+    <p>Walled Lake Northern</p>
+  </footer>
+
+  <script>
+    // Add click event listeners to interactive elements
+    const interactiveElements = document.querySelectorAll('.interactive-element');
+    
+    interactiveElements.forEach(element => {
+      element.addEventListener('click', () => {
+        const hiddenContent = element.nextElementSibling;
+        hiddenContent.classList.toggle('hidden');
+      });
+    });
+    
+  </script>
+
+
+  </html>

@@ -1,0 +1,431 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header { /*Note: Im pretty sure this does nothing since <header> is never used */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #ffffff;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .section h2 {
+    font-size: 24px;
+  }
+  
+  .section p {
+    font-size: 16px;
+  }
+  
+  .interactive-element {
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .interactive-element:hover {
+    background-color: #919191;
+    color: #ffffff;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+
+
+  .americaImageTop {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    padding: 250px; 
+    overflow: hidden;
+    transition: background-image 1s ease-in-out;
+  }
+  
+  .text-container {
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    left: clamp(50px, 30%, 100px);
+    color: #ffffff;
+    transition: color 1s ease-in-out;
+  }
+  
+  .title {
+    transition: color 1s ease-in-out;
+    font-size: 100px;
+    font-family: Palatino, serif;
+  }
+  
+  .date {
+    transition: color 1s ease-in-out;
+    font-size: clamp(20px, 2vw, 60px);
+    top: 5px;
+    margin-top: 4%;
+  }
+
+  .authorText {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    padding: 20px;
+    font-size: 26px;
+    color: #ffffff;
+  }
+
+ /* Footer section */
+ footer {
+	background-color: #333333;;
+	color: #fff;
+	padding: 30px;
+	align-items: center;
+  font-size: 24px;
+  }
+  .section{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);  
+    border-radius: 20px;  
+
+  }
+
+      
+.goodLookinP {
+      background-color: #f4f4f4; /* Dark silver */
+      border: 4px solid #dcdcdc; /* Silver border */
+      color:rgb(0, 0, 0); 
+      padding: 20px; /* Padding for spacing */
+      max-width: 600px; /* Adjust as needed */
+      margin: 0 auto; /* Center the container */
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      flex-direction: row;
+      max-width: 300px;
+      background-color: #e4e4e4;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 0 10px;
+      padding: 20px;
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .card-text {
+      margin-top: 20px;
+      text-align: center;
+      color: #000000;
+    }
+    
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    
+    .card h3 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    
+    .card p {
+      font-size: 22px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    
+    .card a.ps-btn-secondary {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0070ba;
+      color: #ffffffb0;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    
+    .centerText{
+        text-align: center; 
+        color: rgb(255, 255, 255); 
+        font-family:"Corbel Light", sans-serif; font-style: normal; 
+        font-weight: normal; 
+        text-decoration: none; 
+        font-size: 40pt; 
+        margin:5px;
+    }
+    .hover-line{
+        margin: 0px;
+    }
+    .hover a{
+      margin: 5px 2px; /* Centers the info box horizontally */
+    }
+    .white-bar {
+        width: 30%;
+        height: 4px;
+        background-color: #ffffff;
+        position: center;
+        top: 93%;
+        left: 0;
+        transform: translateY(-50%);
+        margin: 0 auto;
+    }
+    a{
+      color: rgb(0,0,0,0);
+    }
+    .infoHelp img{
+      width: auto;
+      max-width: 1300px;
+
+      height: 500px;
+    }
+    .helpInfo {
+      text-align: center; /* Center-aligns the child elements horizontally */
+  }
+    .helpInfo a{
+      background-color: #000000;
+      text-decoration: none;
+      font-size: 40px;
+      margin: 20px; /* Centers the info box horizontally */
+      color:#e4e4e4;
+      text-align: center; 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      padding: 10px;
+      height: auto;
+      border-color: white;
+      border-style: solid; 
+      border-radius: 5px;
+    }
+    .infoHelp {
+      background-color: #000000;
+      margin: 0 auto; /* Centers the info box horizontally */
+      margin-top: 30px;
+      text-align: center; 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      max-width: 1400px; 
+      padding: 10px;
+      height: auto;
+      border-color: white;
+      border-style: solid; 
+      border-radius: 5px;
+    }
+    .info img{
+      width: auto;
+      height: 200px;
+    }
+    .info {
+      background-color: #000000;
+      margin: 0 auto; /* Centers the info box horizontally */
+      margin-top: 30px;
+      text-align: center; 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      max-width: 1400px; 
+      padding: 10px;
+      height: auto;
+      display: flex;
+      border-color: white;
+      border-style: solid; 
+      border-radius: 5px;
+    }
+  
+    .textInsideInfo {
+      font-size: 28px;
+      font-family: Arial, sans-serif;
+  
+      color: rgb(255, 255, 255);
+      margin: 20px;
+      padding: 3px;
+      background-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+      border-radius: 20px;
+
+    }
+  
+    .info h3 {
+      font-size: 38px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-family: "Corbel Light", sans-serif; font-style: normal;
+      color:#ffffff;
+      padding-left: 20px;
+      padding-right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .infoHelp h3 {
+      font-size: 38px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-family: "Corbel Light", sans-serif; font-style: normal;
+      color:#ffffff;
+      padding-left: 20px;
+      padding-right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+        
+  .textList {
+      font-family: Arial, sans-serif;
+      font-size: 40px;
+      color: #ffffff;
+      margin: 0 auto; /* Centers the info box horizontally */
+      text-align: center; 
+      
+  }
+  
+  .textList ul {
+      list-style-type: none;
+      padding: 0;
+  }
+  
+  .textList ul li {
+      margin-bottom: 10px;
+      font-weight: bold;    
+      padding-top: 20px;  
+  }
+  
+  .listIndex img{
+    width: 2em;
+    margin-right: .7em;
+    height: auto;
+    border-radius: 8px; 
+    }
+  .listIndex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+ .infoHeader h1{
+  font-size: 50px;
+  background-color: #000000;
+  margin: 0 auto; /* Centers the info box horizontally */
+  text-align: center; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  width:1000px;
+  justify-content: center;
+  align-items: center;
+  border-color: white;
+  border-style: solid; 
+  border-radius: 5px;
+ }
+ .infoHeader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .interactive-element{
+  margin:50px;
+ }
+ button {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #4caf5000;
+  color: white;
+  cursor: pointer;
+}
+ #content-1{
+ }
+
+
+ #animation-container {
+  position: relative;
+  width: auto;
+  margin-top:20px;
+  height: 50vh;
+  background-image: url("images/WildlifeCenter-site.jpg");
+  overflow: hidden;
+}
+
+#snow-leopard, #blue-sheep, #logo-three{
+  position: absolute;
+  width: 300px;
+  height: auto;
+}
+
+
+@keyframes moveSheep {
+  0% { left: -500px; top: 50%; transform: translateY(-50%); }
+  20% { top: 40%; }
+  40% { top: 60%; }
+  60% { top: 30%; }
+  80% { top: 50%; }
+  100% { left: 100vw; top: 50%; transform: translateY(-50%); }
+}
+
+@keyframes moveLeopard {
+  0% { left: -700px; top: 60%; transform: translateY(-50%); }
+  20% { top: 50%; }
+  40% { top: 70%; }
+  60% { top: 40%; }
+  80% { top: 60%; }
+  100% { left: 100vw; top: 60%; transform: translateY(-50%); }
+}
+@keyframes moveThree {
+  0% { left: -900px; top: 60%; transform: translateY(-50%); }
+  20% { top: 50%; }
+  40% { top: 70%; }
+  60% { top: 40%; }
+  80% { top: 60%; }
+  100% { left: 100vw; top: 60%; transform: translateY(-50%); }
+}
+
+
+#blue-sheep {
+  animation: moveSheep 3s ease-in-out;
+
+}
+
+#logo-three {
+  animation: moveLeopard 8s ease-in-out;
+
+}
+#snow-leopard {
+  animation: moveLeopard 6s ease-in-out;
+
+}
