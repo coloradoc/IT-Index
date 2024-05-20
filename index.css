@@ -201,7 +201,7 @@
       margin: 5px 2px; /* Centers the info box horizontally */
     }
     .hover{
-      padding-top: 6px;
+      padding-top: 0px;
     }
     .white-bar {
         width: 30%;
